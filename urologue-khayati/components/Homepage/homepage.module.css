@@ -41,14 +41,17 @@
     .section1 p, .section1 a{
         font-size: 92%;
     }
-    .section2{
-        padding: 40px 0;
-    }
 }
 
-@media screen and (max-width: 1000px) {
-    .section2{
-
+@media screen and (max-width: 1070px) {
+    .section1{
+        padding: 50px 200px  50px 0;
+    }
+    .section1 h1{
+        font-size: 30px;
+    }
+    .section1 p, .section1 a{
+        font-size: 92%;
     }
 }
     

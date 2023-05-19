@@ -3,6 +3,11 @@
     height: auto;
 }
 
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
 .container h2{
     font-size: 22px;
     color: var(--black);
@@ -28,4 +33,23 @@
         width: 320px;
         height: auto;
     }
+    .container h2{
+        font-size: 20px;
+    }
+    .container p, .container a{
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 75vh;
+    }
+    .container h2{
+        font-size: 18px;
+    }
+    .container p, .container a{
+        font-size: 70%;
+    }
+
 }
