@@ -8,9 +8,14 @@ export default function Homepage() {
       <Stack>
         <img src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other" />
         <Stack className={style.section1}>
-          <h1>Ihr Frauenarzt in Hausmannstätten bei Graz</h1>
-          <p>Zentral gelegen am Marktplatz von Hausmannstätten in der Nähe von Kalsdorf und Fernitz, steht Ihnen unsere Praxis in allen Fragen bzgl. der weiblichen Gesundheit zur Verfügung. Wir freuen uns auf Ihren Besuch in unserer Wahlarztpraxis!</p>
-          <a href="">Mehr über unsere Praxis erfahren</a>
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere quae animi esse, voluptas perspiciatis illum commodi mollitia possimus, dolorem odio quidem eum neque sed et! Magnam facere repellendus cum? Non magni reprehenderit maxime beatae aspernatur nam, porro officia, commodi dolores ab saepe qui iusto inventore eos quisquam hic necessitatibus.</p>
+          <a href="">Lorem ipsum dolor sit amet.</a>
+        </Stack>
+        <Stack className={style.section2}>
+          <Stack className={style.card}></Stack>
+          <Stack className={style.card}></Stack>
+          <Stack className={style.card}></Stack>
         </Stack>
       </Stack>
     </>

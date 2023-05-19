@@ -1,8 +1,13 @@
 import React from 'react'
 import style from './services.module.css'
+import { Stack } from '@mui/material'
 
 export default function Services() {
   return (
-    <div>Services</div>
+    <>
+      <Stack marginX={"auto"}>
+        <img src="assets/WIP.png" alt="work in progress" />
+      </Stack>
+    </>
   )
 }

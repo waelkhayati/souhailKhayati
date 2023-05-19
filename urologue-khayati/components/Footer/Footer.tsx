@@ -18,7 +18,7 @@ export default function Footer() {
       </Stack>
       <Stack className={style.text2}>
         <span>Marktplatz 4, 1. Stock, 8071 Hausmannstätten</span>
-        <span> +43 664 575 81 10 | ordination@frauenarzt-werluschnig.at  </span>
+        <span> +43 664 575 81 10 | urologe-khayati@mail.com  </span>
       </Stack>
     </Box>
     
