@@ -28,7 +28,7 @@
 @media screen and (max-width: 553px) {
     .body{
         margin: 0;
-        width: calc(100vw - 40px));
+        width: calc(100vw - 40px);
         padding: 40px;
     }
 }
