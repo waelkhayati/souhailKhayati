@@ -12,8 +12,8 @@ export default function Footer() {
     <Box className={style.container} >
       <Stack className={style.text1}>
         <span>Dr. Souhail KHAYATI</span>
-        <span>{i18n.specialist_in_radiation_oncology_and_radiation_therapy}</span>
         <span>{i18n.specialist_in_urology_and_andrology}</span>
+        <span>{i18n.specialist_in_radiation_oncology_and_radiation_therapy}</span>
 
       </Stack>
       <Stack className={style.text2}>
