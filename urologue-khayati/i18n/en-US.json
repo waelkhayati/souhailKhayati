@@ -7,6 +7,15 @@
     "practice":"PRACTICE",
     "services":"SERVICES",
     "contact":"CONTACT",
-    "man_and_woman_lying_on_pillows_while_looking_at_each_other":"Man and Woman Lying on Pillows While Looking at Each Other"
+    "man_and_woman_lying_on_pillows_while_looking_at_each_other":"Man and Woman Lying on Pillows While Looking at Each Other",
+    "urology":"Urology",
+    "andrology":"Andrology",
+    "radiation_oncology":"Radiation Oncology",
+    "radiation_therapy":"Radiation Therapy",
+    "more_about_out_practice":"More about our practice",
+    "more_about_urology":"More about urology",
+    "more_about_andrology":"More about andrology",
+    "more_about_radiation_oncology":"More about radiation oncology",
+    "more_about_radiation_therapy":"More about radiation therapy"
     
 }

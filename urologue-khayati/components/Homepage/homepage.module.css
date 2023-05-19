@@ -22,6 +22,15 @@
     margin: 10px 0;
 }
 
+.section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
 @media screen and (max-width: 1200px) {
     .section1{
         padding: 50px 200px  50px 0;
@@ -31,6 +40,15 @@
     }
     .section1 p, .section1 a{
         font-size: 92%;
+    }
+    .section2{
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section2{
+
     }
 }
     

@@ -1,5 +1,6 @@
 .background{
     background-color: rgb(240, 240, 255);
+    width: 100vw;
 }
 
 .body{
@@ -29,7 +30,7 @@
     .body{
         margin: 0;
         width: calc(100vw - 40px);
-        padding: 40px;
+        padding: 20px;
     }
 }
     
