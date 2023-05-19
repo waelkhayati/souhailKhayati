@@ -19,8 +19,8 @@ export default function Header() {
               <span className={style.regularText}>Souhail</span>
               <span className={style.boldText}>KHAYATI</span>
             </Stack>
-            <span className={style.tagline}>{i18n.specialist_in_radiation_oncology_and_radiation_therapy}</span>
             <span className={style.tagline}>{i18n.specialist_in_urology_and_andrology}</span>
+            <span className={style.tagline}>{i18n.specialist_in_radiation_oncology_and_radiation_therapy}</span>
           </Stack>
         </Stack>
         <Stack>
