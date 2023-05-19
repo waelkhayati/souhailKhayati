@@ -81,4 +81,45 @@
     }
     
 }
+
+@media screen and (max-width: 1020px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+    .h1, .h2{
+        text-align: center;
+    }
     
+}
+    
+@media screen and (max-width: 786px) {
+    .tagline{
+        margin: 0;
+        text-align: center;
+    }
+    .name{
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .container div div{
+        justify-content: center;
+    }
+    .image {
+        margin-bottom: 10px;
+    }
+    .container div{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .name{
+        font-size: 1.5rem;
+    }
+    .tagline{
+        font-size: 0.75rem;
+    }
+}

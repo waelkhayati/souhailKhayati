@@ -1,15 +1,17 @@
-import React from 'react'
-import { Box, Stack } from '@mui/material'
+import React, { use } from 'react'
+import { Box, Stack, useMediaQuery } from '@mui/material'
 import style from './header.module.css'
 import { I18nContext } from '../../pages/_app'
 
 export default function Header() {
 
   const i18n = React.useContext(I18nContext);
+  const mobile = useMediaQuery('(max-width:786px)');
+
   return (
     <>
       <Box className={style.container}>
-        <Stack direction="row">
+        <Stack direction={mobile?"column":"row"}>
           <img src="assets/Logo.svg" alt="logo" className={style.image}/>
           <Stack direction="column" marginY={"auto"}>
              <Stack direction="row" spacing={1} className={style.name}>
