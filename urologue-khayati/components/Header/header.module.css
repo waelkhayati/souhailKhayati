@@ -7,7 +7,7 @@
 
 .name{
     font-size: 1.75rem;
-    color: #002169;
+    color: var(--primary);
     margin-left: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.75rem;
@@ -32,7 +32,7 @@
 
 .tagline{
     font-size: 0.75rem;
-    color: #585B5C;
+    color: var(--secondary);
     font-weight: 400;
     margin-left: 1rem;
     text-align: left;
@@ -43,7 +43,7 @@
 
 .h1{
     font-size: 1rem;
-    color: #585B5C;
+    color: var(--black);
     text-align: right;
     text-transform: capitalize;
     line-height: 1.5rem;
@@ -53,7 +53,7 @@
 
 .h2{
     font-size: 0.75rem;
-    color: #585B5C;
+    color: var(--secondary);
     text-align: right;
     text-transform: capitalize;
     font-family: 'Inter', sans-serif;

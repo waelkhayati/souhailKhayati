@@ -3,6 +3,7 @@
     border-bottom: 1px #e1e1e1 solid;
     padding: 10px 0;
     margin: 50px 0;
+    min-width: none;
 }
 
 .container div div div{
@@ -11,7 +12,7 @@
 
 .button{
     font-size: 1rem;
-    color: #585B5C;
+    color: var(--secondary));
     text-align: right;
     text-transform: capitalize;
     line-height: 1.5rem;

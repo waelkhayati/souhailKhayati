@@ -11,7 +11,11 @@
 
 @media screen and (max-width: 1200px) {
     .body{
-        width:1020px;
+        max-width:1020px;
+        width: calc(100vw - 100px);
+    }
+    .background{
+        width: 100vw;
     }
 }
     
@@ -21,8 +25,10 @@
     }
 } 
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 553px) {
     .body{
+        margin: 0;
+        width: calc(100vw - 40px));
         padding: 40px;
     }
 }
