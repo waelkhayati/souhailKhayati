@@ -43,7 +43,7 @@ export default function Navbar({ onPageChange }: NavbarProps) {
         </Stack>
       ) : (
         <Stack className={style.container}>
-          <FormControl sx={{ m: 0, minWidth: 120 }}>
+          <FormControl sx={{ m: 0, minWidth: 120, fontFamily:"Inter, sans-serif" }}>
             <Select
               sx={{ color: "var(--primary)", fontWeight: "500" }}
               variant="standard"

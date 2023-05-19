@@ -8,6 +8,7 @@ import Practice from '../components/Practice/Practice';
 import Ordination from '../components/Ordination/Ordination';
 import Contact from '../components/Contact/Contact';
 import Homepage from '../components/Homepage/Homepage';
+import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   const [page, setPage] = React.useState('home');
@@ -37,6 +38,7 @@ export default function Home() {
           <Navbar onPageChange={setPage} />
           {renderContent()}
         </Stack>
+        <Footer/>
       </Stack>
     </>
   )
