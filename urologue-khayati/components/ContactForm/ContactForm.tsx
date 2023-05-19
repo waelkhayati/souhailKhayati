@@ -121,7 +121,7 @@ export default function AddressForm() {
                   label="category"
                 >
                   {categories.map((item) => (
-                    <MenuItem value={item}>{item}</MenuItem>
+                    <MenuItem key={item} value={item}>{item}</MenuItem>
                   ))}
                 </Select>
               </FormControl>
