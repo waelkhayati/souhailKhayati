@@ -19,13 +19,13 @@ export default function Homepage(props: HomepageProps) {
   const i18n = React.useContext(I18nContext);
 
   const [activePage, setActivePage] = React.useState('homepage');
-  const navigateToServices = () => {
+  const navigateToServices = (tab: string) => {
     router.push({
       pathname: router.pathname,
       query: { 
-        ...router.query,
-        page: 'services' 
-      },
+        page: 'services',
+        tab: tab
+       },
     });
   };
 
@@ -58,10 +58,38 @@ export default function Homepage(props: HomepageProps) {
           <span onClick={navigateToPractice}>{i18n.more_about_our_practice}</span>
         </Stack>
         <Box className={style.section2}>
-          <Card image={'/assets/urology.jpg'} alt={''} title={i18n.urology} description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} link={i18n.more_about_urology} linkRef={navigateToServices}/>
-          <Card image={'/assets/andrology.jpg'} alt={''} title={i18n.andrology} description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} link={i18n.more_about_andrology} linkRef={navigateToServices}/>
-          <Card image={'/assets/radio_oncology.jpg'} alt={''} title={i18n.radiation_oncology } description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} link={i18n.more_about_radiation_oncology} linkRef={navigateToServices}/>
-          <Card image={'/assets/radio_therapy.jpg'} alt={''} title={i18n.radiation_therapy} description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} link={i18n.more_about_radiation_therapy} linkRef={navigateToServices}/>
+          <Card 
+            image={'/assets/urology.jpg'} 
+            alt={''} 
+            title={i18n.urology} 
+            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            link={i18n.more_about_urology} 
+            linkRef={() => navigateToServices('0')}
+          />
+          <Card 
+            image={'/assets/andrology.jpg'} 
+            alt={''} 
+            title={i18n.andrology} 
+            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            link={i18n.more_about_andrology} 
+            linkRef={() => navigateToServices('1')}
+          />
+          <Card 
+            image={'/assets/radio_oncology.jpg'} 
+            alt={''}
+            title={i18n.radiation_oncology } 
+            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            link={i18n.more_about_radiation_oncology} 
+            linkRef={() => navigateToServices('2')}
+          />
+          <Card 
+            image={'/assets/radio_therapy.jpg'} 
+            alt={''} 
+            title={i18n.radiation_therapy} 
+            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            link={i18n.more_about_radiation_therapy} 
+            linkRef={() => navigateToServices('3')}
+          />
         </Box>
       </Stack>
       )}

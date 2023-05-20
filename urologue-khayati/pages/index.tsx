@@ -45,6 +45,7 @@ export default function Home() {
         return <Ordination />;
       case 'contact':
         return <Contact />;
+        
       default:
         return <Homepage activePage={activePage} onPageChange={setActivePage} />;
     }
