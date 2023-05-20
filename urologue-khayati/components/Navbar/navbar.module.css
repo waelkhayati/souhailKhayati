@@ -1,6 +1,6 @@
 .container{
-    border-top: 1px #e1e1e1 solid;
-    border-bottom: 1px #e1e1e1 solid;
+    border-top: 1px var(--tertiary) solid;
+    border-bottom: 1px var(--tertiary) solid;
     padding: 10px 0;
     margin: 50px 0;
     min-width: none;
@@ -12,7 +12,7 @@
 
 .button{
     font-size: 1rem;
-    color: var(--secondary));
+    color: var(--secondary);
     text-align: right;
     text-transform: capitalize;
     line-height: 1.5rem;

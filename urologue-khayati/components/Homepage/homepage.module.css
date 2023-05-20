@@ -1,3 +1,7 @@
+.container img{
+    border-radius: 10px;
+}
+
 .section1{
     padding: 50px 270px 50px 140px;
 }
@@ -7,6 +11,7 @@
     color: var(--black);
     font-weight: 600;
     margin: 10px 0;
+    font-family: "Dosis", sans-serif;
 }
 
 .section1 p{
@@ -16,10 +21,15 @@
     margin: 10px 0;
 }
 
-.section1 a{
+.section1 span{
     font-weight: 400;
     font-size: 100%;
     margin: 10px 0;
+    cursor: pointer;
+    color: var(--primary);
+}
+.container span:hover{
+    text-decoration: underline;
 }
 
 .section2{

@@ -12,9 +12,18 @@
     "andrology":"Andrologie",
     "radiation_oncology":"Radioonkologie",
     "radiation_therapy":"Strahlentherapie",
-    "more_about_out_practice":"Mehr über unsere Praxis",
+    "more_about_our_practice":"Mehr über unsere Praxis",
     "more_about_urology":"Mehr über Urologie",
     "more_about_andrology":"Mehr über Andrologie",
     "more_about_radiation_oncology":"Mehr über Radioonkologie",
-    "more_about_radiation_therapy":"Mehr über Strahlentherapie"
+    "more_about_radiation_therapy":"Mehr über Strahlentherapie",
+    "name":"Name",
+    "email":"Email Adresse",
+    "message":"Nachricht",
+    "send":"Senden",
+    "subject":"Betreff",
+    "phone":"Telefon",
+    "appointment_date":"Termin Datum",
+    "write_your_message_here":"Schreiben Sie Ihre Nachricht hier..."
+
 }

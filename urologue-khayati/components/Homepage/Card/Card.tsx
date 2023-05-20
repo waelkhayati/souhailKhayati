@@ -8,7 +8,7 @@ type CardProps = {
     title: string,
     description: string,
     link: string,
-    linkRef: string
+    linkRef: () => void;
 }
 
 export default function Card(props: CardProps) {
@@ -18,7 +18,7 @@ export default function Card(props: CardProps) {
             <img src={props.image} alt={props.alt}/>
             <h2>{props.title}</h2>
             <p>{props.description}</p>
-            <a href={props.linkRef}>{props.link}</a>
+            <span onClick={props.linkRef}>{props.link}</span>
         </Stack>
     </>
   )

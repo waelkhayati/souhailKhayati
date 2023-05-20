@@ -1,31 +1,42 @@
 .container{
     width: 420px;
     height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 var(--tertiary);
 }
 
 .container img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .container h2{
     font-size: 22px;
     color: var(--black);
-    font-weight: 500 ;
-    margin: 10px 0 ;
+    font-weight: 600 ;
+    margin: 10px ;
+    font-family: "Dosis", sans-serif;
+
 }
 
 .container p{
     font-size: 100%;
     color: var(--secondary);
     font-weight: 400;
-    margin: 0;
+    margin: 0 10px;
 }
 
-.container a{
+.container span{
     font-size: 100%;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 10px;
+    cursor: pointer;
+    color: var(--primary);
+}
+.container span:hover{
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1200px) {

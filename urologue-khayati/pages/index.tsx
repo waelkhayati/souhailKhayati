@@ -9,14 +9,34 @@ import Ordination from '../components/Ordination/Ordination';
 import Contact from '../components/Contact/Contact';
 import Homepage from '../components/Homepage/Homepage';
 import Footer from '../components/Footer/Footer';
+import { useRouter } from 'next/router';
 
 export default function Home() {
-  const [page, setPage] = React.useState('home');
+
+  const router = useRouter();
+  const [activePage, setActivePage] = React.useState('homepage');
+
+  const handlePageChange = (page: string) => {
+    router.push({
+      pathname: router.pathname,
+      query: { 
+        ...router.query,
+        page: page 
+      },
+    });
+  };
+
+  React.useEffect(() => {
+    if (router.query.page) {
+      setActivePage(router.query.page as string);
+    }
+  }, [router.query]);
+
 
   const renderContent = () => {
-    switch (page) {
-      case 'home':
-        return <Homepage />;
+    switch (activePage) {
+      case 'homepage':
+        return <Homepage activePage={activePage} onPageChange={setActivePage} />;
       case 'services':
         return <Services />;
       case 'practice':
@@ -26,7 +46,7 @@ export default function Home() {
       case 'contact':
         return <Contact />;
       default:
-        return <Homepage />;
+        return <Homepage activePage={activePage} onPageChange={setActivePage} />;
     }
   };
 
@@ -34,12 +54,12 @@ export default function Home() {
     <>
       <Stack className={style.background}>
         <Stack className={style.body}>
-          <Header/>
-          <Navbar onPageChange={setPage} />
+          <Header />
+          <Navbar activePage={activePage} onPageChange={handlePageChange} />
           {renderContent()}
         </Stack>
-        <Footer/>
+        <Footer />
       </Stack>
     </>
-  )
+  );
 }
