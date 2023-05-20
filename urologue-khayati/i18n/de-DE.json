@@ -21,9 +21,14 @@
     "email":"Email Adresse",
     "message":"Nachricht",
     "send":"Senden",
-    "subject":"Betreff",
     "phone":"Telefon",
     "appointment_date":"Termin Datum",
-    "write_your_message_here":"Schreiben Sie Ihre Nachricht hier..."
-
+    "write_your_message_here":"Schreiben Sie Ihre Nachricht hier...",
+    "make_an_appointment":"Termin vereinbaren",
+    "please_enter_your_name":"Bitte geben Sie Ihren Namen ein",
+    "please_enter_your_email":"Bitte geben Sie Ihre Email Adresse ein",
+    "invalid_email":"Invalid email",
+    "invalid_phone_number":"Invalid phone number",
+    "please_enter_your_phone_number":"Bitte geben Sie Ihre Telefonnummer ein",
+    "please_write_your_message":"Bitte schreiben Sie Ihre Nachricht"
 }

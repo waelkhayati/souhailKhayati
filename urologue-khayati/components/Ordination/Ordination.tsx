@@ -2,30 +2,67 @@ import React, { useContext } from 'react';
 import { Button, Stack, TextField, useMediaQuery } from '@mui/material';
 import { I18nContext } from '../../pages/_app';
 import style from './ordination.module.css';
+import { useForm } from 'react-hook-form';
+import { sendContactForm } from '../../services/api';
+import { z } from 'zod';
 
+const schema = z.object({
+  name: z.string().min(1, "please_enter_your_name"),
+  email: z.string().email("invalid_email").min(1, "please_enter_your_email"),
+  phone: z.string().min(1, "please_enter_your_phone_number"),
+  message: z.string().min(1, "please_write_your_message"),
+});
 
 export default function Ordination() {
   const i18n = useContext(I18nContext);
-  const mediumScreen = useMediaQuery('(max-width: 1020px)');
   const mobile = useMediaQuery('(max-width: 786px)');
+
+  const { register, handleSubmit, formState: { errors } } = useForm(
+    {
+      mode: "onChange",
+      defaultValues: {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
+    }
+  );
+  const onSubmit = async (data:any) => {
+    try {
+      const validatedData = schema.parse(data);
+      const res = await sendContactForm(validatedData);
+      console.log(res.json());
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <>
+      <Stack className={style.header}>
+        <h1 className={style.title}>{i18n.make_an_appointment}</h1>
+        <p className={style.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reiciendis ipsam cupiditate nobis! Necessitatibus, vel! Eum explicabo saepe nihil repellendus magnam! Labore officia amet soluta atque sapiente molestiae? Quos maiores repudiandae, accusamus dignissimos sunt officia, fugiat nostrum voluptas repellendus ratione enim alias perferendis ducimus, fugit impedit! Vero voluptate odit quam?</p>
+
+      </Stack>
       <Stack direction={mobile?'column':'row'} spacing={5} className={style.container}>
         <Stack className={style.image}>
           <img src="/assets/ordination.jpg" alt=""/>
         </Stack>
-
-        <Stack className={style.form} >
+        
+        <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
+        
 
           <TextField
-            required
+            {...register("name")}
             id="name"
             name="name"
             label={i18n.name}
             variant="standard"
             fullWidth
             className={style.input}
+            error={errors.name !== undefined}
+            helperText={errors.name?.message && i18n[errors.name.message]}
             sx={{
               '& .MuiInput-root:before': {
                 borderColor: 'var(--tertiary) !important',
@@ -40,13 +77,15 @@ export default function Ordination() {
           />
 
           <TextField
-            required
+            {...register("email")}
             id="email"
             name="email"
             label={i18n.email}
             variant="standard"
             fullWidth
             className={style.input}
+            error={errors.email !== undefined}
+            helperText={errors.email?.message && i18n[errors.email.message]}
             sx={{
               '& .MuiInput-root:before': {
                 borderColor: 'var(--tertiary) !important',
@@ -61,13 +100,15 @@ export default function Ordination() {
           />
 
           <TextField
-            required
+            {...register("phone")}
             id="phone"
             name="phone"
             label={i18n.phone}
             variant="standard"
             fullWidth
             className={style.input}
+            error={errors.phone !== undefined}
+            helperText={errors.email?.message && i18n[errors.email.message]}
             sx={{
               '& .MuiInput-root:before': {
                 borderColor: 'var(--tertiary) !important',
@@ -82,7 +123,7 @@ export default function Ordination() {
           />
 
           <TextField
-            required
+            {...register("message")}
             id="message"
             name="message"
             label={i18n.message}
@@ -92,6 +133,8 @@ export default function Ordination() {
             variant="standard"
             fullWidth
             className={style.input}
+            error={errors.message !== undefined}
+            helperText={errors.email?.message && i18n[errors.email.message]}
             sx={{
               '& .MuiInput-root:before': {
                 borderColor: 'var(--tertiary) !important',
@@ -107,6 +150,7 @@ export default function Ordination() {
 
           <Stack sx={{ marginLeft: 'auto' }}>
             <Button 
+              type="submit"
               sx={{
                 paddingX:"35px", 
                 background:"var(--primary)", 
@@ -119,7 +163,9 @@ export default function Ordination() {
               {i18n.send}   
             </Button>
           </Stack>
-        </Stack>
+          
+
+        </form>
       </Stack>
     </>
   );

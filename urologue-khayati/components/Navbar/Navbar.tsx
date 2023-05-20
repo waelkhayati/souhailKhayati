@@ -18,7 +18,6 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
     onPageChange(selectedPage);
   };
 
-  console.log(activePage);
 
   return (
     <>
@@ -42,7 +41,7 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
               inputProps={{ 'aria-label': 'Without label' }}
               disableUnderline
             >
-              <MenuItem value="homepage">{i18n.home}</MenuItem>
+              <MenuItem value="homepage">{i18n.homepage}</MenuItem>
               <MenuItem value="ordination">{i18n.ordination}</MenuItem>
               <MenuItem value="practice">{i18n.practice}</MenuItem>
               <MenuItem value="services">{i18n.services}</MenuItem>

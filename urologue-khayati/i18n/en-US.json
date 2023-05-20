@@ -21,8 +21,14 @@
     "email":"Email Address",
     "message":"Message",
     "send":"Send",
-    "subject":"Subject",
     "phone":"Phone",
     "appointment_date":"Appointment Date",
-    "write_your_message_here":"Write your message here..."
+    "write_your_message_here":"Write your message here...",
+    "make_an_appointment":"Make an appointment",
+    "please_enter_your_name":"Please enter your name",
+    "please_enter_your_email":"Please enter your email",
+    "invalid_email":"Invalid email",
+    "invalid_phone_number":"Invalid phone number",
+    "please_enter_your_phone_number":"Please enter your phone number",
+    "please_write_your_message":"Please write your message"
 }
