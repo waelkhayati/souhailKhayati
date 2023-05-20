@@ -7,11 +7,13 @@ export const I18nContext = createContext({} as any);
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [showChild, setShowChild] = useState(false);
   
+  const router = useRouter();
+  const locale = router.locale;
   let i18n;
 
-  if (useRouter().locale === 'en-US') {  
+  if (locale === 'en-US') {
     i18n = require('../i18n/en-US.json');
-  } else if (useRouter().locale === 'fr-FR') {
+  } else if (locale === 'fr-FR') {
     i18n = require('../i18n/fr-FR.json');
   } else {
     i18n = require('../i18n/de-DE.json');

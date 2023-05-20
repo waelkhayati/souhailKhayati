@@ -6,7 +6,11 @@ export default function Contact() {
   return (
     <>
       <Stack marginX={"auto"}>
-        <img src="assets/WIP.png" alt="work in progress" />
+      <iframe
+              src='https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed'
+              frame-border={0}
+              style={{ border: '0' }}
+            ></iframe>
       </Stack>
     </>
   )
