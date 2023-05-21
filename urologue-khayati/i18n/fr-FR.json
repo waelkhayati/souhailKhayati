@@ -2,12 +2,12 @@
     "specialist_in_radiation_oncology_and_radiation_therapy":"Spécialiste en oncologie et radiothérapie",
     "specialist_in_urology_and_andrology":"Spécialiste en urologie et andrologie",
     "our_work_hours":"Nos heures de travail",
-    "homepage":"ACCEUIL",
-    "ordination":"ORDINATION",
-    "practice":"PRATIQUE",
-    "doctor":"DOCTEUR",
-    "services":"SERVICES",
-    "contact":"CONTACT",
+    "homepage":"home",
+    "ordination":"ordination",
+    "practice":"pratique",
+    "doctor":"médecin",
+    "services":"services",
+    "contact":"contact",
     "man_and_woman_lying_on_pillows_while_looking_at_each_other":"Homme et femme couchés sur des oreillers en se regardant",
     "urology":"Urologie",
     "andrology":"Andrologie",
@@ -32,5 +32,6 @@
     "invalid_email":"Adresse email invalide",
     "invalid_phone_number":"Numéro de téléphone invalide",
     "please_enter_your_phone_number":"Veuillez entrer votre numéro de téléphone",
-    "please_write_your_message":"Veuillez écrire votre message"
+    "please_write_your_message":"Veuillez écrire votre message",
+    "imprint_and_legal_information":"Mentions légales"
 }

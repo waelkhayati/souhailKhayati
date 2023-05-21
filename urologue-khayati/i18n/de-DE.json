@@ -2,12 +2,12 @@
     "specialist_in_radiation_oncology_and_radiation_therapy":"Facharzt für Radioonkologie & Strahlentherapie",
     "specialist_in_urology_and_andrology":"Facharzt für Urologie & Andrologie",
     "our_work_hours" : "Unsere Arbeitszeiten",
-    "home":"HOME",
-    "ordination":"ORDINATION",
-    "practice":"WAHLARZT",
-    "doctors":"ARZT",
-    "services":"LEISTUNGEN",
-    "contact":"KONTAKT",
+    "homepage":"home",
+    "ordination":"ordination",
+    "practice":"wahlarzt",
+    "doctor":"arzt",
+    "services":"leistungen",
+    "contact":"kontakt",
     "man_and_woman_lying_on_pillows_while_looking_at_each_other":"Mann und Frau liegen auf Kissen und schauen einander an",
     "urology":"Urologie",
     "andrology":"Andrologie",
@@ -32,5 +32,6 @@
     "invalid_email":"Invalid email",
     "invalid_phone_number":"Invalid phone number",
     "please_enter_your_phone_number":"Bitte geben Sie Ihre Telefonnummer ein",
-    "please_write_your_message":"Bitte schreiben Sie Ihre Nachricht"
+    "please_write_your_message":"Bitte schreiben Sie Ihre Nachricht",
+    "imprint_and_legal_information":"Impressum und rechtliche Informationen"
 }

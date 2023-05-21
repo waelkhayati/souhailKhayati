@@ -5,8 +5,8 @@ import { Stack } from '@mui/material'
 export default function Practice() {
   return (
     <>
-      <Stack marginX={"auto"}>
-        <img src="assets/WIP.png" alt="work in progress" />
+      <Stack marginX={"auto"} paddingX={"20px"}>
+        <img src="assets/WIP.png" alt="work in progress" width={"100%"} height={"auto"}/>
       </Stack>
     </>
   )

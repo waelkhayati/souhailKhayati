@@ -33,6 +33,11 @@ export default function Contact() {
            <p>Freitag 8:00 Bis 12:00 Und Nach Telefonischer Vereinbarung</p> 
         </Stack>
       </Box>
+
+      <Stack className={style.imprint}>
+          <h3>{i18n.imprint_and_legal_information}</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda obcaecati natus tempora sunt architecto tempore dolor commodi, corporis eius necessitatibus. Ipsum labore dolores repudiandae eveniet animi, exercitationem ab quos, ducimus accusantium maiores quis magni atque soluta fugiat dicta expedita nemo ex laboriosam! Sit, perferendis ipsa consequatur, laboriosam vel cumque alias cupiditate maxime voluptates accusantium repellendus dolores placeat assumenda dicta nostrum velit? Quos quo quod atque quisquam harum vitae ipsa aspernatur minus sequi facere excepturi quas cupiditate dolorum sapiente ea assumenda quidem, corporis tenetur esse nihil soluta modi vel saepe! Perferendis sapiente veritatis pariatur dolorum nulla. Praesentium dicta quia eligendi labore?</p>
+      </Stack>
     </>
   )
 }

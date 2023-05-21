@@ -10,6 +10,7 @@ import Contact from '../components/Contact/Contact';
 import Homepage from '../components/Homepage/Homepage';
 import Footer from '../components/Footer/Footer';
 import { useRouter } from 'next/router';
+import Doctor from '../components/Doctor/Doctor';
 
 export default function Home() {
 
@@ -41,6 +42,8 @@ export default function Home() {
         return <Services />;
       case 'practice':
         return <Practice />;
+      case 'doctor':
+        return <Doctor />;
       case 'ordination':
         return <Ordination />;
       case 'contact':

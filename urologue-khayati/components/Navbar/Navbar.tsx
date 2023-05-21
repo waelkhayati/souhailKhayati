@@ -26,6 +26,7 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
           <span className={`${style.button} ${activePage === 'homepage' ? style.selected : ''}`} onClick={() => onPageChange('homepage')}>{i18n.homepage}</span>
           <span className={`${style.button} ${activePage === 'ordination' ? style.selected : ''}`} onClick={() => onPageChange('ordination')}>{i18n.ordination}</span>
           <span className={`${style.button} ${activePage === 'practice' ? style.selected : ''}`} onClick={() => onPageChange('practice')}>{i18n.practice}</span>
+          <span className={`${style.button} ${activePage === 'doctor' ? style.selected : ''}`} onClick={() => onPageChange('doctor')}>{i18n.doctor}</span>
           <span className={`${style.button} ${activePage === 'services' ? style.selected : ''}`} onClick={() => onPageChange('services')}>{i18n.services}</span>
           <span className={`${style.button} ${activePage === 'contact' ? style.selected : ''}`} onClick={() => onPageChange('contact')}>{i18n.contact}</span>
         </Stack>
@@ -41,11 +42,11 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
               inputProps={{ 'aria-label': 'Without label' }}
               disableUnderline
             >
-              <MenuItem value="homepage">{i18n.homepage}</MenuItem>
-              <MenuItem value="ordination">{i18n.ordination}</MenuItem>
-              <MenuItem value="practice">{i18n.practice}</MenuItem>
-              <MenuItem value="services">{i18n.services}</MenuItem>
-              <MenuItem value="contact">{i18n.contact}</MenuItem>
+              <MenuItem value="homepage">{i18n['homepage'].toUpperCase()}</MenuItem>
+              <MenuItem value="ordination">{i18n['ordination'].toUpperCase()}</MenuItem>
+              <MenuItem value="practice">{i18n['practice'].toUpperCase()}</MenuItem>
+              <MenuItem value="services">{i18n['services'].toUpperCase()}</MenuItem>
+              <MenuItem value="contact">{i18n['contact'].toUpperCase()}</MenuItem>
             </Select>
           </FormControl>
         </Stack>
