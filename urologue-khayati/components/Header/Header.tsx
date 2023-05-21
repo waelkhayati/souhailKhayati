@@ -1,23 +1,34 @@
-import React, { use } from 'react'
+import React, { use, useEffect } from 'react'
 import { Box, Stack, useMediaQuery } from '@mui/material'
 import style from './header.module.css'
 import { I18nContext } from '../../pages/_app'
+import { useRouter } from 'next/router';
 
 export default function Header() {
 
   const i18n = React.useContext(I18nContext);
   const mobile = useMediaQuery('(max-width:786px)');
+  const router = useRouter();
+
+  const navigateToHomepage = () => {
+    router.push({
+      pathname: router.pathname,
+      query: { 
+        ...router.query,
+        page: 'homepage' 
+      },
+    });
+  };
+
 
   return (
     <>
       <Box className={style.container}>
-        <Stack direction={mobile?"column":"row"}>
+        <Stack direction={mobile?"column":"row"} className={style.logo} onClick={navigateToHomepage}>
           <img src="assets/Logo.svg" alt="logo" className={style.image}/>
           <Stack direction="column" marginY={"auto"}>
              <Stack direction="row" spacing={1} className={style.name}>
-              <span className={style.boldText}>Dr.</span>
-              <span className={style.regularText}>Souhail</span>
-              <span className={style.boldText}>KHAYATI</span>
+              <span className={style.text}>Dr. Souhail KHAYATI</span>
             </Stack>
             <span className={style.tagline}>{i18n.specialist_in_urology_and_andrology}</span>
             <span className={style.tagline}>{i18n.specialist_in_radiation_oncology_and_radiation_therapy}</span>
