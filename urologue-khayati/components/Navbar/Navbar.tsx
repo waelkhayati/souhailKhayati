@@ -45,6 +45,7 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
               <MenuItem value="homepage">{i18n['homepage'].toUpperCase()}</MenuItem>
               <MenuItem value="ordination">{i18n['ordination'].toUpperCase()}</MenuItem>
               <MenuItem value="practice">{i18n['practice'].toUpperCase()}</MenuItem>
+              <MenuItem value="doctor">{i18n['doctor'].toUpperCase()}</MenuItem>
               <MenuItem value="services">{i18n['services'].toUpperCase()}</MenuItem>
               <MenuItem value="contact">{i18n['contact'].toUpperCase()}</MenuItem>
             </Select>
