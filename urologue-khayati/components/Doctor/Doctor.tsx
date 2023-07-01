@@ -17,8 +17,8 @@ export default function Doctor() {
         </Stack>
         <Stack>
         <h1>Dr. Souhail KHAYATI</h1>
-        <p>{i18n.welcome_to_my_private_ordination}</p>
-        <p>{i18n.i_would_like_to_shortly_introduce_myself}</p>
+        <p style={{fontWeight:600}}>{i18n.welcome_to_my_private_ordination}</p>
+        <p style={{fontWeight:600}}>{i18n.i_would_like_to_shortly_introduce_myself}</p>
           <ul>
             <li>{i18n.studies_in_graz_and_vienna_as_well_as_stays_abroad}</li>
             <li>{i18n.graduated_with_a_doctoral_thesis}</li>
@@ -27,27 +27,62 @@ export default function Doctor() {
             <li>{i18n.specialist_in_urology_and_andrology_at_the_lkh}</li>
             <li>{i18n.i_am_currently_still_working}</li>
           </ul>
-          <p>{i18n.memberships}</p>
-          <Stack direction={mobile?"column":"row"} sx={{flexWrap:"wrap"}} className={style.logos}>
+          <br />
+          <p style={{fontWeight:600}}>{i18n.memberships}</p>
+          <Stack  direction={mobile?"column":"row"} sx={{flexWrap:"wrap", textAlign:"center", mb:"40px"}} alignItems="center" justifyContent={"center"} className={style.logos}>
         
-            <Stack>
+            <Stack className={style.OGU} alignItems={"center"}>
               <img src="/assets/OGU.png" alt="ÖGU" />
-              <p>ÖGU (Österreichische Gesellschaft für Urologie und Andrologie)</p>
+              <p>Österreichische Gesellschaft für Urologie und Andrologie</p>
             </Stack>
-            <Stack>
-              <img src="/assets/EAU.png" alt="EAU" />
-              <p>EAU Eruopean Assosication of Urology</p>
+            <Stack className={style.EAU} alignItems={"center"}>
+              <img src="/assets/EAU.svg" alt="EAU" />
+              <p>Eruopean Assosication of Urology</p>
             </Stack>
-            <Stack>
-              <img src="/assets/AND.png" alt="ANDROLOGIE" />
+            <Stack className={style.AND} alignItems={"center"}>
+              <img src="/assets/AND.svg" alt="ANDROLOGIE" />
               <p>Arbeitskreis für Andrologie und sexuelle Funktionsstörungen</p>
             </Stack>
-            <Stack>
+            <Stack className={style.OGRO} alignItems={"center"}>
              <img src="/assets/OGRO.png" alt="OGRO" />
-              <p>ÖGRO (Österreichische Gesellschaft für Radioonkologie)</p>
+              <p>Österreichische Gesellschaft für Radioonkologie</p>
             </Stack>  
+            <br />
           </Stack>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni et perferendis provident praesentium nulla vero accusamus non fugiat consectetur accusantium modi, quas possimus nisi. Eveniet temporibus voluptatibus quo dignissimos tempore. Facere, soluta sit reiciendis numquam autem voluptate nesciunt non quidem, alias sunt delectus iusto quia quaerat, deserunt vel doloremque vero optio commodi inventore minima fuga odit quisquam eum. Repudiandae fuga modi perferendis distinctio veritatis, ex nam ab molestiae et nostrum similique eligendi obcaecati maiores velit dolorum.</p>
+
+
+          <p style={{fontWeight:600, marginBottom:"10px"}}>{i18n.my_publications}</p>
+          
+          <p className={style.pubtitle}>Role of Residual Set-up Errors and Intrafraction Motion in the Evaluation of Planning Target Volume Margins for Prostate Cancer Radiotherapy ASTRO-2012,</p>
+          <p className={style.pubauth}>T. Langsenlehner, C. Döller, P. Winkler, G. Galle, G. Tauber, S. Khayati, KS. Kapp</p>
+          
+          <p className={style.pubtitle}>Medium-term physical and behavioural sequelae of motor vehicle occupant injuries in children (international Journal of Control and Safety Promotion)</p>
+          <p className={style.pubauth}>Souhail Khayati,Gerold Schwantzer, Randolf Hammerl, Annelie M.Weinber, Johannes M. Mayr; Vol. 12:March 2005,53-55)</p>
+
+          <p className={style.pubtitle}>Retrospektive Morbiditäts- und Mortalitätsanalyse bei konventioneller und laparoskopischer
+Cholezystektomie zur Feststellung des Stellenwertes der intraoperativen Cholangiographie</p>
+          <p className={style.pubauth}>Medizinische Universität Graz Dissertationsbertreuer: Univ.-Prof. Dr. Selman Uranüs; Begutachter: Univ.-Prof.
+Dr. Johann Pfeifer</p>
+
+          <p className={style.pubtitle}>Pedestrian injuries in children (World Health Organisation, European Comission; 7th World
+Conference on Injury Prevention and Safety Promotion, 2004)</p>
+          <p className={style.pubauth}>Johannes M. Mayr, Andrea Berghold, Andrea Rupprt-Kohlmayr, Christian Eder, Johannes Wernig, Souhail
+Khayati</p>
+
+          <p className={style.pubtitle}>Causes and consequences of pedestrian injuries in children(European Journal of Pediatrics,
+2003)</p>
+          <p className={style.pubauth}>Johannes M. Mayr, Christian Eder ,Andrea Berghold, Johannes Wernig, Souhail Khayati , Andrea Ruppert-
+Kohlmayr, 162:184-190, Springer Verlag)</p>
+
+          <p className={style.pubtitle}>Vergleichende Outcome-Studie bei offenen vs. Laparoskopischen Operationen an der
+Gallenblase (Comperative outcome study of open versus laparoscopic surgery of the gallbladder)</p>
+          <p className={style.pubauth}>Uranüs S., Khayati S., Schreiber A.,</p>
+
+          <p className={style.pubtitle}>Retrospektive Analyse der Leistenhernienoperationen von 1994-1999</p>
+          <p className={style.pubauth}>(Salehi B., Khayati S., Schreiber A., Nagle D., Höbarth G., Uggowitzer M., * Uranüs S., Abteilung für Chirurgische
+Forschung Medizinische Universität Graz )*Medizinische Universitätsklinik für Radiologie Graz) mit Teilnahme
+am 42.Österreichischen Chirurgenkongress</p>
+      
           </Stack>
       </Stack>
       </Stack>
