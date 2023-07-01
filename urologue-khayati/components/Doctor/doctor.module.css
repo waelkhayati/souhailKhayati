@@ -27,13 +27,12 @@
 
 .OGU img, .EAU img, .AND img, .OGRO img{
     filter: grayscale(100%) opacity(0.5);
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     transition-property: filter;
     transition-timing-function: ease;
 }
 
 .OGU img:hover, .EAU img:hover, .AND img:hover, .OGRO img:hover{
-    animation: ease-in 1s;
     filter: grayscale(0%) opacity(1);
 }
 
@@ -88,6 +87,11 @@
     }
     .container{
         padding: 0 20px 20px 20px
+    }
+
+    .OGU img, .EAU img, .AND img, .OGRO img{
+        filter: grayscale(0%) opacity(1);
+
     }
 }
     
