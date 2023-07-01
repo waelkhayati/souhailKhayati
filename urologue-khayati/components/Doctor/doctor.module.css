@@ -7,15 +7,15 @@
     margin-top: 20px;
 }
 
-.head p, .head ul{
+.head p, .head ul, .head li{
     font-size: 16px;
     font-weight: 400;
     color: var(--secondary);
-    margin: 10px 0;
+    margin: 5px 0;
     font-family: 'Inter', sans-serif;
 }
 
-.head img{
+.profile_pic{
     width: 200px;
     height: 200px;
     border-radius: 10px;
@@ -28,8 +28,14 @@
     padding: 0 40px 40px 40px
 }
 
+.logos img{
+    margin: 20px;
+    width: 200px;
+    height: auto;
+}
+
 @media screen and (max-width: 768px){
-    .head img{
+    .profile_pic{
         width: 100%;
         height: 100%;
         margin: 0;
@@ -38,7 +44,7 @@
     .head h1{
         font-size: 28px;
     }
-    .head p, .head ul{
+    .head p, .head ul, .head li{
         font-size: 14px;
     }
     .container{

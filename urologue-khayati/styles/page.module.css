@@ -1,6 +1,7 @@
 .background{
-    background-color: rgb(240, 240, 255);
+    /* background-color: rgb(240, 240, 255); */
     width: 100vw;
+    background-color: white;
 }
 
 .body{
