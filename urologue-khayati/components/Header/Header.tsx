@@ -37,8 +37,6 @@ export default function Header() {
         <Stack>
           <span className={style.h1}>{i18n.our_work_hours}</span>
           <span className={style.h2}>{i18n.our_work_hours_2}</span>
-          <span className={style.h2}>Donnerstag 15:00 bis 19:00</span>
-          <span className={style.h2}>Freitag 8:00 bis 12:00 und nach telefonischer Vereinbarung</span>
         </Stack>
       </Box>
     </>

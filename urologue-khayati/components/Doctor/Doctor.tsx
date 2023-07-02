@@ -29,6 +29,14 @@ export default function Doctor() {
             <li>{i18n.i_am_currently_still_working}</li>
           </ul>
           <br />
+          <p style={{fontWeight:600}}>{i18n.spoken_languages}</p>
+          <ul>
+            <li>{i18n.german}</li>
+            <li>{i18n.english}</li>
+            <li>{i18n.french}</li>
+            <li>{i18n.arabic}</li>
+          </ul>
+          <br />
           <p style={{fontWeight:600}}>{i18n.memberships}</p>
           <Stack  direction={mobile?"column":"row"} sx={{gap:"20px", flexWrap:"wrap", textAlign:"center", margin:"0 auto 40px auto ", maxWidth:"800px"}} alignItems="center" justifyContent={"center"} className={style.logos}>
         

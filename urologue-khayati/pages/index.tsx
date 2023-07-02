@@ -62,8 +62,8 @@ export default function Home() {
           <Navbar activePage={activePage} onPageChange={handlePageChange} />
           {renderContent()}
         </Stack>
-        <Footer />
       </Stack>
+      <Footer />
     </>
   );
 }

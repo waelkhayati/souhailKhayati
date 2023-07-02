@@ -8,7 +8,7 @@
 
 .body{
     padding: 50px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: white;
     overflow-y: overlay !important;    
 
