@@ -2,6 +2,7 @@ import React from 'react'
 import style from './doctor.module.css';
 import { Stack, useMediaQuery } from '@mui/material';
 import { I18nContext } from '../../pages/_app';
+import Link from 'next/link';
 
 export default function Doctor() {
 
@@ -29,22 +30,30 @@ export default function Doctor() {
           </ul>
           <br />
           <p style={{fontWeight:600}}>{i18n.memberships}</p>
-          <Stack  direction={mobile?"column":"row"} sx={{flexWrap:"wrap", textAlign:"center", mb:"40px"}} alignItems="center" justifyContent={"center"} className={style.logos}>
+          <Stack  direction={mobile?"column":"row"} sx={{gap:"20px", flexWrap:"wrap", textAlign:"center", margin:"0 auto 40px auto ", maxWidth:"800px"}} alignItems="center" justifyContent={"center"} className={style.logos}>
         
             <Stack className={style.OGU} alignItems={"center"}>
-              <img src="/assets/OGU.png" alt="ÖGU" />
+              <Link href={'https://www.uro.at/'} target='blank'>
+                <img src="/assets/OGU.png" alt="ÖGU" />
+              </Link>
               <p>Österreichische Gesellschaft für Urologie und Andrologie</p>
             </Stack>
             <Stack className={style.EAU} alignItems={"center"}>
-              <img src="/assets/EAU.svg" alt="EAU" />
+              <Link href={'https://uroweb.org/'} target='blank'>
+                <img src="/assets/EAU.png" alt="EAU" />
+              </Link>
               <p>Eruopean Assosication of Urology</p>
             </Stack>
             <Stack className={style.AND} alignItems={"center"}>
-              <img src="/assets/AND.svg" alt="ANDROLOGIE" />
+              <Link href={'https://www.uro.at/t'} target='blank'>
+                <img src="/assets/AND.svg" alt="ANDROLOGIE" />
+              </Link>
               <p>Arbeitskreis für Andrologie und sexuelle Funktionsstörungen</p>
             </Stack>
             <Stack className={style.OGRO} alignItems={"center"}>
-             <img src="/assets/OGRO.png" alt="OGRO" />
+              <Link href={'http://www.oegro.com/'} target='blank'>
+              <img src="/assets/OGRO.png" alt="OGRO" />
+             </Link>
               <p>Österreichische Gesellschaft für Radioonkologie</p>
             </Stack>  
             <br />

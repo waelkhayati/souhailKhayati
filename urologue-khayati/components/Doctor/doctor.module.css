@@ -37,20 +37,20 @@
 }
 
 .OGU img,  .EAU img{
-    margin: 40px 20px;
+    margin: 40px;
     width: 150px;
     height: auto;
 }
 
 .AND img{
-    margin: 40px 20px;
+    margin: 40px;
     width: 200px;
     height: auto;
 
 }
 
 .OGRO img{
-    margin: 20px;
+    margin: 20px 40px;
     width: 150px;
     height: auto;
 }
