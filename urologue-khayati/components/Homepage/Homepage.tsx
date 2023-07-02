@@ -59,7 +59,7 @@ export default function Homepage(props: HomepageProps) {
         </Stack>
         <Box className={style.section2}>
           <Card 
-            image={'/assets/urology.jpg'} 
+            image={'/assets/andrology.jpg'} 
             alt={''} 
             title={i18n.urology} 
             description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
@@ -67,7 +67,7 @@ export default function Homepage(props: HomepageProps) {
             linkRef={() => navigateToServices('0')}
           />
           <Card 
-            image={'/assets/andrology.jpg'} 
+            image={'/assets/urology.jpg'} 
             alt={''} 
             title={i18n.andrology} 
             description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
