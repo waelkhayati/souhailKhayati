@@ -1,7 +1,8 @@
 {
     "specialist_in_radiation_oncology_and_radiation_therapy":"Facharzt für Radioonkologie & Strahlentherapie",
     "specialist_in_urology_and_andrology":"Facharzt für Urologie & Andrologie",
-    "our_work_hours" : "Unsere Arbeitszeiten",
+    "our_work_hours" : "Ordinationszeiten:",
+    "our_work_hours_2":"Freitag und Mittwoch von 16h bis 20h sowie nach telefonischer Vereinbarung",
     "homepage":"home",
     "ordination":"ordination",
     "practice":"wahlarzt",

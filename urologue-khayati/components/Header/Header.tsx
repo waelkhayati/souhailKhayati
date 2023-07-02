@@ -1,4 +1,4 @@
-import React, { use, useEffect } from 'react'
+import React from 'react'
 import { Box, Stack, useMediaQuery } from '@mui/material'
 import style from './header.module.css'
 import { I18nContext } from '../../pages/_app'
@@ -36,7 +36,7 @@ export default function Header() {
         </Stack>
         <Stack>
           <span className={style.h1}>{i18n.our_work_hours}</span>
-          <span className={style.h2}>Dienstag 08:30 bis 18:30</span>
+          <span className={style.h2}>{i18n.our_work_hours_2}</span>
           <span className={style.h2}>Donnerstag 15:00 bis 19:00</span>
           <span className={style.h2}>Freitag 8:00 bis 12:00 und nach telefonischer Vereinbarung</span>
         </Stack>
