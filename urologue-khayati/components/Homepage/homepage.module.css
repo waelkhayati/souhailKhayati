@@ -12,7 +12,7 @@
 
 .section1 h1{
     font-size: 38px;
-    color: var(--black);
+    color: var(--grey);
     font-weight: 600;
     margin: 10px 0;
     /* font-family: "Dosis", sans-serif; */
@@ -43,7 +43,8 @@
     gap: 50px;
     padding: 40px;
     justify-content: space-evenly;
-
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -55,6 +56,11 @@
     }
     .section1 p, .section1 a{
         font-size: 92%;
+    }
+
+    .section2{
+        max-width: none;
+        margin: 0;
     }
 }
 

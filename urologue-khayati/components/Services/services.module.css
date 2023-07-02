@@ -27,6 +27,10 @@
     color: var(--secondary);
 }
 
+.description li{
+    margin: 10px 0;
+}
+
 @media screen and (max-width: 1020px) {
     .tabs{
         justify-content: center !important;

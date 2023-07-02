@@ -8,6 +8,7 @@
     --quaternary: rgb(240, 240, 255);
     --black: #1E1E1E;
     --white: #F2F2F2;
+    --grey: rgb(120, 120, 120);
 }
 
 body{
@@ -21,4 +22,7 @@ a{
 
 h1, h2, h3, h4, h5, p, a, span{
     font-family: 'Inter', sans-serif;
+}
+p, a, ul, li{
+    line-height: 1.5;
 }
