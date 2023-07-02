@@ -53,8 +53,12 @@ export default function Homepage(props: HomepageProps) {
       <Stack className={style.container}>
         <img src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other" />
         <Stack className={style.section1}>
-          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere quae animi esse, voluptas perspiciatis illum commodi mollitia possimus, dolorem odio quidem eum neque sed et! Magnam facere repellendus cum? Non magni reprehenderit maxime beatae aspernatur nam, porro officia, commodi dolores ab saepe qui iusto inventore eos quisquam hic necessitatibus.</p>
+          <h1>{i18n.welcome_to_my_private_ordination_intro}</h1>
+          <p>{i18n.in_my_ordination}</p>
+          <p>{i18n.i_inform_and_advise}</p>
+          <p>{i18n.operations_are_currently}</p>
+          <p>{i18n.our_ordination_in_Hausmannstatten}</p>
+          <p>{i18n.no_matter_what}</p>
           <span onClick={navigateToPractice}>{i18n.more_about_our_practice}</span>
         </Stack>
         <Box className={style.section2}>
