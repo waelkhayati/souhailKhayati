@@ -45,7 +45,7 @@ export default function Doctor() {
               <p>Eruopean Assosication of Urology</p>
             </Stack>
             <Stack className={style.AND} alignItems={"center"}>
-              <Link href={'https://www.uro.at/t'} target='blank'>
+              <Link href={'https://www.andrologie.at/'} target='blank'>
                 <img src="/assets/AND.svg" alt="ANDROLOGIE" />
               </Link>
               <p>Arbeitskreis für Andrologie und sexuelle Funktionsstörungen</p>

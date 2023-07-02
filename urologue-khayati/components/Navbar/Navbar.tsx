@@ -19,6 +19,7 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
   };
 
 
+
   return (
     <>
       {!mobile ? (
@@ -34,7 +35,7 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
         <Stack className={style.container}>
           <FormControl sx={{ m: 0, minWidth: 120 }}>
             <Select
-              sx={{ color: "var(--primary)", fontWeight: "500" }}
+              sx={{ color: "white", fontWeight: "500", margin: "0 auto" }}
               variant="standard"
               value={activePage}
               onChange={handleChange}

@@ -2,14 +2,20 @@
     /* border-top: 1px var(--tertiary) solid;
     border-bottom: 1px var(--tertiary) solid; */
     background: linear-gradient(90deg, rgba(101,171,220,0) 0%, rgba(101,171,220,1) 25%, rgba(101,171,220,1) 75%, rgba(101,171,220,0) 100%);
+    /* background:  rgba(101,171,220,1); */
     padding: 20px 0;
     margin: 40px 0;
     min-width: none;
 }
 
 .container div div div{
-    padding: 0;
+    padding: 0 !important;
 }
+
+.container div div svg{
+    display: none;
+}
+
 
 .button{
     font-size: 1rem;
