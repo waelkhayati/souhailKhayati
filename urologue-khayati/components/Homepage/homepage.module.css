@@ -12,7 +12,7 @@
 
 .section1 h1{
     font-size: 38px;
-    color: var(--grey);
+    color: var(--primary);
     font-weight: 600;
     margin: 10px 0;
     /* font-family: "Dosis", sans-serif; */

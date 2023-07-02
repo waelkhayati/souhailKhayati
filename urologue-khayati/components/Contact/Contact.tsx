@@ -30,9 +30,7 @@ export default function Contact() {
            <h1>{i18n.phone}</h1>
            <p>+43 664 575 81 10 </p>
            <h1>{i18n.our_work_hours}</h1>
-           <p>Dienstag 08:30 Bis 18:30</p> 
-           <p>Donnerstag 15:00 Bis 19:00</p> 
-           <p>Freitag 8:00 Bis 12:00 Und Nach Telefonischer Vereinbarung</p> 
+           <p style={{maxWidth:"400px"}}>{i18n.our_work_hours_2}</p> 
         </Stack>
       </Box>
 
