@@ -28,7 +28,7 @@ export default function Header() {
           <img src="assets/Logo.svg" alt="logo" className={style.image}/>
           <Stack direction="column" marginY={"auto"}>
              <Stack direction="row" spacing={1} className={style.name}>
-              <span className={style.text}>Dr. Souhail KHAYATI</span>
+              <span className={style.text}>UROLOGE KHAYATI</span>
             </Stack>
             <span className={style.tagline}>{i18n.specialist_in_urology_and_andrology}</span>
             <span className={style.tagline}>{i18n.specialist_in_radiation_oncology_and_radiation_therapy}</span>

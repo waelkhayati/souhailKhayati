@@ -1,8 +1,9 @@
 .container{
-    border-top: 1px var(--tertiary) solid;
-    border-bottom: 1px var(--tertiary) solid;
-    padding: 10px 0;
-    margin: 50px 0;
+    /* border-top: 1px var(--tertiary) solid;
+    border-bottom: 1px var(--tertiary) solid; */
+    background: linear-gradient(90deg, rgba(101,171,220,0) 0%, rgba(101,171,220,1) 25%, rgba(101,171,220,1) 75%, rgba(101,171,220,0) 100%);
+    padding: 20px 0;
+    margin: 40px 0;
     min-width: none;
 }
 
@@ -12,7 +13,7 @@
 
 .button{
     font-size: 1rem;
-    color: var(--secondary);
+    color: rgba(255, 255, 255, 0.75);
     text-align: right;
     text-transform: uppercase;
     line-height: 1.5rem;
@@ -29,7 +30,7 @@
 
 .selected{
     font-size: 1rem;
-    color: var(--primary);
+    color: white;
     text-align: right;
     line-height: 1.5rem;
     font-family: 'Inter', sans-serif;

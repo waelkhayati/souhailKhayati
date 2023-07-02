@@ -1,9 +1,9 @@
 .head h1{
     font-size: 52px;
-    font-family: "Dosis", sans-serif;
+    /* font-family: "Dosis", sans-serif; */
     font-weight: 600;
     margin-top: 20px;
-    color : rgb(72, 72, 72);
+    color : rgb(94, 94, 94);
 }
 
 .head p, .head ul, .head li{
