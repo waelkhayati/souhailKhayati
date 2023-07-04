@@ -56,14 +56,15 @@ export default function Home() {
 
   return (
     <>
-      <Stack className={style.background}>
+      {/* <Stack className={style.background}>
         <Stack className={style.body}>
           <Header />
           <Navbar activePage={activePage} onPageChange={handlePageChange} />
           {renderContent()}
         </Stack>
       </Stack>
-      <Footer />
+      <Footer /> */}
+      <p>Hello World!</p>
     </>
   );
 }
