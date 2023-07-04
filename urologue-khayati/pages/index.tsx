@@ -63,6 +63,7 @@ export default function Home() {
           {renderContent()}
         </Stack>
       </Stack>
+      
       <Footer />
     </>
   );
