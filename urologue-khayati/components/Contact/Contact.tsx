@@ -24,11 +24,11 @@ export default function Contact() {
         </Stack>
         <Stack className={style.details}>
            <h1>{i18n.email}</h1>
-           <p>urologe-khayati@gmail.com</p>
+           <p>ordinaiton@urologe-khayati.at</p>
            <h1>{i18n.address}</h1>
            <p>Marktplatz 4, 1. Stock, 8071 Hausmannstätten</p>
            <h1>{i18n.phone}</h1>
-           <p>+43 000 000 00 00 </p>
+           <p>+43 0664 1441636 </p>
            <h1>{i18n.our_work_hours}</h1>
            <p style={{maxWidth:"400px"}}>{i18n.our_work_hours_2}</p> 
         </Stack>
