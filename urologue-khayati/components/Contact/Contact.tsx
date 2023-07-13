@@ -28,7 +28,7 @@ export default function Contact() {
            <h1>{i18n.address}</h1>
            <p>Marktplatz 4, 1. Stock, 8071 Hausmannstätten</p>
            <h1>{i18n.phone}</h1>
-           <p>+43 0664 1441636 </p>
+           <p>+43 664 1441636 </p>
            <h1>{i18n.our_work_hours}</h1>
            <p style={{maxWidth:"400px"}}>{i18n.our_work_hours_2}</p> 
         </Stack>
