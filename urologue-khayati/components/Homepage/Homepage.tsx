@@ -66,7 +66,7 @@ export default function Homepage(props: HomepageProps) {
             image={'/assets/andrology.jpg'} 
             alt={''} 
             title={i18n.urology} 
-            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            description={i18n.urology_is_a_broad_field} 
             link={i18n.more_about_urology} 
             linkRef={() => navigateToServices('0')}
           />
@@ -74,7 +74,7 @@ export default function Homepage(props: HomepageProps) {
             image={'/assets/urology.jpg'} 
             alt={''} 
             title={i18n.andrology} 
-            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            description={i18n.Andrology_is_a_medical_specialty} 
             link={i18n.more_about_andrology} 
             linkRef={() => navigateToServices('1')}
           />
@@ -82,15 +82,15 @@ export default function Homepage(props: HomepageProps) {
             image={'/assets/radio_oncology.jpg'} 
             alt={''}
             title={i18n.radiation_oncology } 
-            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            description={i18n.Radiation_oncology_and_radiation_therapy_is_a_medical_specialty} 
             link={i18n.more_about_radiation_oncology} 
             linkRef={() => navigateToServices('2')}
           />
           <Card 
             image={'/assets/radio_therapy.jpg'} 
             alt={''} 
-            title={i18n.radiation_therapy} 
-            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, atque. Voluptas fugiat quisquam nesciunt provident.'} 
+            title={i18n.radiation_therapy}
+            description={i18n.urooncology_is_a_medical_specialty}  
             link={i18n.more_about_radiation_therapy} 
             linkRef={() => navigateToServices('3')}
           />
