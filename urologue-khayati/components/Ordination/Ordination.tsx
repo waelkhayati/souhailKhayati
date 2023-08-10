@@ -42,7 +42,6 @@ export default function Ordination() {
     <>
       <Stack className={style.header}>
         <h1 className={style.title}>{i18n.make_an_appointment}</h1>
-        <p className={style.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reiciendis ipsam cupiditate nobis! Necessitatibus, vel! Eum explicabo saepe nihil repellendus magnam! Labore officia amet soluta atque sapiente molestiae? Quos maiores repudiandae, accusamus dignissimos sunt officia, fugiat nostrum voluptas repellendus ratione enim alias perferendis ducimus, fugit impedit! Vero voluptate odit quam?</p>
 
       </Stack>
       <Stack direction={mobile?'column':'row'} spacing={5} className={style.container}>

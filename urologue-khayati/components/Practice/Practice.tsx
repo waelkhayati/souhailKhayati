@@ -2,8 +2,10 @@ import React from 'react'
 import styles from './practice.module.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper";
+import {  EffectFade, Autoplay } from "swiper";
 import { Stack } from '@mui/material';
+import 'swiper/css/effect-fade';
+
 
 export default function Practice() {
   return (
@@ -13,13 +15,13 @@ export default function Practice() {
       spaceBetween={30}
       loop={true}
       className={styles.swiper}
-      modules={[Autoplay]}
+      modules={[EffectFade, Autoplay]}
       autoplay={{
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       centeredSlides={true}
-
+      effect={'fade'}
     >
       <SwiperSlide className={styles.swiperSlide}>
         <img src="/assets/office1.jpg"/>

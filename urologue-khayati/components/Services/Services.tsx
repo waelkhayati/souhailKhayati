@@ -91,6 +91,7 @@ export default function VerticalTabs() {
       <Tab label={i18n.andrology} sx={{ fontWeight: 400 }} {...a11yProps(1)} />
       <Tab label={i18n.radiation_oncology} sx={{ fontWeight: 400 }} {...a11yProps(2)} />
       <Tab label={i18n.radiation_therapy} sx={{ fontWeight: 400 }} {...a11yProps(3)} />
+     
     </Tabs>
     <Stack className={style.content}>
       <TabPanel value={value} index={0}>
@@ -172,6 +173,7 @@ export default function VerticalTabs() {
           <li>{i18n.as_a_specialist_in_both_urology_and_radiooncology}</li>
         </ul>
       </TabPanel>
+      
     </Stack>
   </Box>
   );
