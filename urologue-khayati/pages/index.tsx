@@ -44,8 +44,8 @@ export default function Home() {
         return <Practice />;
       case 'doctor':
         return <Doctor />;
-      case 'ordination':
-        return <Ordination />;
+      // case 'ordination':
+      //   return <Ordination />;
       case 'contact':
         return <Contact />;
         

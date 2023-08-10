@@ -251,7 +251,7 @@ export default function Contact() {
             <li>Aufenthaltsdauer auf der Webseite sowie Datum und Uhrzeit </li>
             <li>aufgerufene Seiten der Webseite </li>
             <li>Spracheinstellungen und Betriebssystem </li>
-            <li>"Leaving-Page" (auf welcher URL hat der Benutzer die Webseite verlassen) </li>
+            <li>&quotLeaving-Page&quot (auf welcher URL hat der Benutzer die Webseite verlassen) </li>
             <li>ISP (Internet Service Provider) </li>
           </ul>
           </p>

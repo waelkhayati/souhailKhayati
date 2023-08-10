@@ -25,7 +25,7 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
       {!mobile ? (
         <Stack direction="row" spacing={5} justifyContent="center" className={style.container}>
           <span className={`${style.button} ${activePage === 'homepage' ? style.selected : ''}`} onClick={() => onPageChange('homepage')}>{i18n.homepage}</span>
-          <span className={`${style.button} ${activePage === 'ordination' ? style.selected : ''}`} onClick={() => onPageChange('ordination')}>{i18n.ordination}</span>
+          {/* <span className={`${style.button} ${activePage === 'ordination' ? style.selected : ''}`} onClick={() => onPageChange('ordination')}>{i18n.ordination}</span> */}
           <span className={`${style.button} ${activePage === 'practice' ? style.selected : ''}`} onClick={() => onPageChange('practice')}>{i18n.practice}</span>
           <span className={`${style.button} ${activePage === 'doctor' ? style.selected : ''}`} onClick={() => onPageChange('doctor')}>{i18n.doctor}</span>
           <span className={`${style.button} ${activePage === 'services' ? style.selected : ''}`} onClick={() => onPageChange('services')}>{i18n.services}</span>
@@ -44,7 +44,7 @@ export default function Navbar({ activePage, onPageChange }: NavbarProps) {
               disableUnderline
             >
               <MenuItem value="homepage">{i18n['homepage'].toUpperCase()}</MenuItem>
-              <MenuItem value="ordination">{i18n['ordination'].toUpperCase()}</MenuItem>
+              {/* <MenuItem value="ordination">{i18n['ordination'].toUpperCase()}</MenuItem> */}
               <MenuItem value="practice">{i18n['practice'].toUpperCase()}</MenuItem>
               <MenuItem value="doctor">{i18n['doctor'].toUpperCase()}</MenuItem>
               <MenuItem value="services">{i18n['services'].toUpperCase()}</MenuItem>
