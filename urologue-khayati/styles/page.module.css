@@ -17,7 +17,6 @@
 @media screen and (max-width: 1200px) {
     .body{
         max-width:1020px;
-        width: calc(100% - 40px);
     }
     .background{
         width: 100%;
@@ -25,15 +24,12 @@
 }
     
 @media screen and (max-width: 1020px) {
-    .body{
-        width:calc(100% - 100px);
-    }
+    
 } 
 
 @media screen and (max-width: 553px) {
     .body{
         margin: 0;
-        width: calc(100% - 40px);
         padding: 20px;
     }
 }
