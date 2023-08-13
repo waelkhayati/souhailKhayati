@@ -78,14 +78,7 @@ export default function Homepage(props: HomepageProps) {
             link={i18n.more_about_andrology} 
             linkRef={() => navigateToServices('1')}
           />
-          <Card 
-            image={'/assets/radio_oncology.jpg'} 
-            alt={''}
-            title={i18n.radiation_oncology } 
-            description={i18n.Radiation_oncology_and_radiation_therapy_is_a_medical_specialty} 
-            link={i18n.more_about_radiation_oncology} 
-            linkRef={() => navigateToServices('2')}
-          />
+          
           <Card 
             image={'/assets/radio_therapy.jpg'} 
             alt={''} 
@@ -93,6 +86,14 @@ export default function Homepage(props: HomepageProps) {
             description={i18n.urooncology_is_a_medical_specialty}  
             link={i18n.more_about_radiation_therapy} 
             linkRef={() => navigateToServices('3')}
+          />
+          <Card 
+            image={'/assets/radio_oncology.jpg'} 
+            alt={''}
+            title={i18n.radiation_oncology } 
+            description={i18n.Radiation_oncology_and_radiation_therapy_is_a_medical_specialty} 
+            link={i18n.more_about_radiation_oncology} 
+            linkRef={() => navigateToServices('2')}
           />
         </Box>
       </Stack>
