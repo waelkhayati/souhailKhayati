@@ -55,6 +55,7 @@ export default function Homepage(props: HomepageProps) {
         <Stack className={style.section1}>
           <h1>{i18n.welcome_to_my_private_ordination_intro}</h1>
           <p>{i18n.in_my_ordination}</p>
+          <p>Ich bin Vertragsarzt für KFA-Graz, Wien. Sowie Wahlarzt für die ÖGK!</p>
           <p>{i18n.i_inform_and_advise}</p>
           <p>{i18n.operations_are_currently}</p>
           <p>{i18n.our_ordination_in_Hausmannstatten}</p>
