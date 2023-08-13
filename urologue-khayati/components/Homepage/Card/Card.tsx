@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './card.module.css'
-import { Stack } from '@mui/material'
+import { Box, Stack } from '@mui/material'
 
 type CardProps = {
     image: string,
