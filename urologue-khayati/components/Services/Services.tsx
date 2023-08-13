@@ -282,15 +282,15 @@ verbessern und ihnen Hoffnung und Heilung zu schenken.</p>
       <TabPanel value={value} index={2}>
       <img className={style.image} src="/assets/radio_therapy.jpg" alt={i18n.radiation_therapy} />
         <h1 className={style.title}>{i18n.radiation_therapy}</h1>
-        <p>Die Uro-Onkologie ist ein medizinisches Fachgebiet, das sich mit der Diagnose, Behandlung
+        <p>Die Uroonkologie ist ein medizinisches Fachgebiet, das sich mit der Diagnose, Behandlung
 und Prävention von Tumorerkrankungen im urologischen Bereich befasst. Als Urologe und
 Radioonkologe in meiner Privatordination stelle ich Ihnen meine umfangreiche Erfahrung in
-der Uro-Onkologie.</p>
-<p>Die Uro-Onkologie beschäftigt sich mit der Behandlung von bösartigen Tumoren, die das
+der Uroonkologie.</p>
+<p>Die Uroonkologie beschäftigt sich mit der Behandlung von bösartigen Tumoren, die das
 Harn-Ableitungssystem betreffen, einschließlich der Nieren, Harnleiter, Blase und Harnröhre.
 Sie umfasst auch die Diagnose und Behandlung von Krebserkrankungen der Prostata, Hoden
 und des Penis.</p>
-<p>In der Uro-Onkologie übernehme ich verschiedene Aufgabengebiete. Dazu gehören die
+<p>In der Uroonkologie übernehme ich verschiedene Aufgabengebiete. Dazu gehören die
 Durchführung von Diagnosetests wie bildgebende Verfahren, Biopsien und
 Blutuntersuchungen, um die Art und das Stadium des Tumors zu bestimmen. Ich berate
 meine Patienten über die verschiedenen Behandlungsoptionen, darunter chirurgische
@@ -320,10 +320,10 @@ Tumorerkrankungen des Urogenitalsystems eine einfühlsame und umfassende Betreuu
 bieten. Ich unterstütze sie bei der Entscheidungsfindung für die am besten geeignete
 Behandlungsmethode, erkläre ihnen die möglichen Risiken und Nebenwirkungen und stehe
 ihnen während des gesamten Behandlungsprozesses zur Seite.</p>
-<p>Die Uro-Onkologie ist ein sich ständig weiterentwickelndes Fachgebiet, und ich halte mich
+<p>Die Uroonkologie ist ein sich ständig weiterentwickelndes Fachgebiet, und ich halte mich
 über neue medikamentöse Behandlungen und innovative Techniken auf dem Laufenden, um
 meinen Patienten die bestmöglichen Ergebnisse zu bieten. Gemeinsam mit meinem Team
-arbeite ich daran, den Fortschritt in der Uro-Onkologie zu nutzen und die Lebensqualität
+arbeite ich daran, den Fortschritt in der Uroonkologie zu nutzen und die Lebensqualität
 meiner Patienten zu verbessern.</p>
 
 
