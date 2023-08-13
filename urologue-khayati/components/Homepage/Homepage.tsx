@@ -85,7 +85,7 @@ export default function Homepage(props: HomepageProps) {
             title={i18n.radiation_therapy}
             description={i18n.urooncology_is_a_medical_specialty}  
             link={i18n.more_about_radiation_therapy} 
-            linkRef={() => navigateToServices('3')}
+            linkRef={() => navigateToServices('2')}
           />
           <Card 
             image={'/assets/radio_oncology.jpg'} 
@@ -93,7 +93,7 @@ export default function Homepage(props: HomepageProps) {
             title={i18n.radiation_oncology } 
             description={i18n.Radiation_oncology_and_radiation_therapy_is_a_medical_specialty} 
             link={i18n.more_about_radiation_oncology} 
-            linkRef={() => navigateToServices('2')}
+            linkRef={() => navigateToServices('3')}
           />
         </Box>
       </Stack>
