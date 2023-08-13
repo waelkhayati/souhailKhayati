@@ -111,9 +111,7 @@ Krebs wie Nierenkrebs, Blasenkrebs, Hodenkrebs und Prostatakrebs. Die Urologie b
 auch urologische Erkrankungen bei Frauen, einschließlich Harnwegsinfektionen,
 Blasenentleerungsstörungen, Harninkontinenz und Beckenbodenproblemen. Darüber hinaus
 kümmern sich Urologen um angeborene urologische Anomalien, Harnwegsinfektionen,
-Bettnässen und andere Harnwegsstörungen bei Kindern. Ich setze mich dafür ein, dass
-meine Patienten bestmöglich informiert sind und gemeinsam treffen wir Entscheidungen
-über ihre Gesundheitsversorgung, um die bestmöglichen Ergebnisse zu erzielen. Ich setze
+Bettnässen und andere Harnwegsstörungen bei Kindern. Ich setze
 mich dafür ein, dass meine Patienten bestmöglich informiert sind und gemeinsam treffen wir
 Entscheidungen über ihre Gesundheitsversorgung, um die bestmöglichen Ergebnisse zu
 erzielen. Die Zufriedenheit und das Vertrauen meiner Patienten sind für mich von großer
@@ -297,7 +295,7 @@ meine Patienten über die verschiedenen Behandlungsoptionen, darunter chirurgisc
 Eingriffe, Strahlentherapie, Chemotherapie und immunbasierte Therapien. Zusätzlich
 betreue ich meine Patienten engmaschig und übernehme die Tumorboard-Zuweisungen,
 sowie die Besprechung der Ergebnisse. Während der Behandlung überwache ich zudem
-genaustens den Verlauf der Erkrankung.</p>
+genauestens den Verlauf der Erkrankung.</p>
 <p>Bei tumorösen Erkrankungen des Harn-Ableitungssystems wie Nierenkrebs, Blasenkrebs und
 Harnröhrenkrebs besteht die Behandlung in der Regel aus einer Kombination von
 chirurgischen Eingriffen, Strahlentherapie und Chemotherapie. Moderne minimalinvasive
@@ -314,7 +312,7 @@ Operation entfernt. Je nach Stadium und Risikofaktoren kann eine anschließende
 Chemotherapie, seltener Strahlentherapie, erforderlich sein.</p>
 <p>Peniskrebs ist eine seltene Erkrankung, bei der eine chirurgische Entfernung des Tumors in
 Kombination mit Lymphknotenentfernung oder Strahlentherapie durchgeführt werden kann.</p>
-<p>Als Urologe und Radioonkologe in meiner Privatordination ist es mir ein besonderes
+<p>Als Urologe und Radioonkologe ist es mir ein besonderes
 Anliegen, diese beiden Fächer miteinander zu kombinieren und meinen Patienten mit
 Tumorerkrankungen des Urogenitalsystems eine einfühlsame und umfassende Betreuung zu
 bieten. Ich unterstütze sie bei der Entscheidungsfindung für die am besten geeignete

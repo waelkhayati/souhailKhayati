@@ -74,7 +74,7 @@ export default function Contact() {
         
       </Box>
 
-      <h1 className={style.title}>{i18n.make_an_appointment}</h1>
+      {/* <h1 className={style.title}>{i18n.make_an_appointment}</h1>
 
         <Stack direction={mobile?'column':'row'} spacing={5} className={style.container2}>
         <Stack className={style.image}>
@@ -197,7 +197,7 @@ export default function Contact() {
           
 
         </form>
-        </Stack>
+        </Stack> */}
 
       <Stack className={style.imprint}>
           <h3>{i18n.imprint_and_legal_information}</h3>
