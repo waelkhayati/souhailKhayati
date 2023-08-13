@@ -210,7 +210,7 @@ ein, dass sie sich bei mir wohl und gut betreut fühlen.</p>
       </TabPanel>
       <TabPanel value={value} index={3}>
       <img className={style.image} src="/assets/radio_therapy.jpg" alt={i18n.radiation_therapy} />
-        <h1 className={style.title}>{i18n.radiation_therapy}</h1>
+        <h1 className={style.title}>{i18n.radiation_oncology}</h1>
 
         <p>Die Radioonkologie und Strahlentherapie ist ein medizinisches Fachgebiet, das sich mit der
 Anwendung von Strahlung zur Behandlung von gut- und bösartigen Tumorerkrankungen
@@ -281,7 +281,7 @@ verbessern und ihnen Hoffnung und Heilung zu schenken.</p>
       </TabPanel>
       <TabPanel value={value} index={2}>
       <img className={style.image} src="/assets/radio_oncology.jpg" alt={i18n.radiation_oncology} />
-        <h1 className={style.title}>{i18n.radiation_oncology}</h1>
+        <h1 className={style.title}>{i18n.radiation_therapy}</h1>
         <p>Die Uro-Onkologie ist ein medizinisches Fachgebiet, das sich mit der Diagnose, Behandlung
 und Prävention von Tumorerkrankungen im urologischen Bereich befasst. Als Urologe und
 Radioonkologe in meiner Privatordination stelle ich Ihnen meine umfangreiche Erfahrung in
