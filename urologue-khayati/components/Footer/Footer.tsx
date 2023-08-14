@@ -19,9 +19,10 @@ export default function Footer() {
       <Stack className={style.text2}>
         <span>Marktplatz 4, 1. Stock, 8071 Hausmannstätten</span>
         <span> +43 664 1441636 | ordination@urologe-khayati.at  </span>
+        <span className={style.text2}>Entworfen und entwickelt von <a className={style.text2} target="_blank" href="https://www.linkedin.com/in/waelkhayati/">Wael Khayati</a></span>
       </Stack>
+
     </Box>
-    
     </>
   )
 }

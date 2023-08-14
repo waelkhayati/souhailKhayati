@@ -206,7 +206,7 @@ export default function Contact() {
           <p><b>Anschrift: </b>Marktplatz 4, 8071, Hausmannstätten, Österreich</p><br />
           <p><b>Kontaktdaten: </b></p>
           <p>Telefon: +43 664 1441636</p>
-          <p>Email: <a href="mailto:ordination@urologe-khayati.at"></a> ordination@urologe-khayati.at </p><br />
+          <p>Email: <a href="mailto:ordination@urologe-khayati.at">ordination@urologe-khayati.at</a>  </p><br />
           <p><b>Anwendbare Rechtsvorschrift: </b> <a href="www.ris.bka.gv.at">www.ris.bka.gv.at</a></p><br />
           <p><b>Berufsbezeichnung: </b>Wahlarztordination</p><br />
           <p><b>Online Streitbeilegung: </b>Verbraucher mit einer Niederlassung in Österreich oder einem sonstigen Vertragsstaat der ODR-VO, haben die Möglichkeit bei Problemen hinsichtlich des entgeltlichen Kaufs von Waren oder Dienstleistungen die Online-Streitbelegung der Europäischen Kommission über folgende Plattform in Anspruch zu nehmen <a href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a></p><br />
@@ -269,7 +269,7 @@ export default function Contact() {
             <li>Einschränkung</li>
           </ul>
           </p>
-          <p>Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen das Datenschutzrecht passiert sind, so haben Sie die Möglichkeit sich bei uns (<a href="ordination@urologe-khayati.at">ordination@urologe-khayati.at</a>) oder der Datenschutzbehörde zu beschweren.</p><br />
+          <p>Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen das Datenschutzrecht passiert sind, so haben Sie die Möglichkeit sich bei uns (<a href="mailto:ordination@urologe-khayati.at">ordination@urologe-khayati.at</a>) oder der Datenschutzbehörde zu beschweren.</p><br />
           <p><b>Sie erreichen uns unter folgenden Kontaktdaten:</b></p>
           <p><b>Webseitenbetreiber: </b>Dr. Souhail Khayati</p>
           <p><b>Telefonnummer: </b>0664 4028584</p>
