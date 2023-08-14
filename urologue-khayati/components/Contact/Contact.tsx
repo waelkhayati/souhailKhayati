@@ -62,7 +62,7 @@ export default function Contact() {
         </Stack>
         <Stack className={style.details}>
            <h1>{i18n.email}</h1>
-           <p>ordinaiton@urologe-khayati.at</p>
+           <p>ordination@urologe-khayati.at</p>
            <h1>{i18n.address}</h1>
            <p>Marktplatz 4, 1. Stock, 8071 Hausmannstätten</p>
            <h1>{i18n.phone}</h1>
