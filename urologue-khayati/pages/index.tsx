@@ -151,9 +151,11 @@ export default function Home() {
           <Navbar activePage={activePage} onPageChange={handlePageChange} />
           {renderContent()}
         </Stack>
-      </Stack> */}
-      Hello World!
+      </Stack> 
       <Footer />
+      */}
+      Hello World!
+      
     </>
   );
 }
