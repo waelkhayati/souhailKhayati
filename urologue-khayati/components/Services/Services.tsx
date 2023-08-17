@@ -59,7 +59,7 @@ export default function VerticalTabs() {
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
-    const page = "services";
+    const page = "leistungen";
     router.push({
       pathname: router.pathname,
       query: {
@@ -206,6 +206,69 @@ ein, dass sie sich bei mir wohl und gut betreut fühlen.</p>
           <li>{i18n.penile_curvature}</li>
         </ul>          
       </TabPanel>
+      <TabPanel value={value} index={2}>
+      <img className={style.image} src="/assets/radio_therapy.jpg" alt={i18n.radiation_therapy} />
+        <h1 className={style.title}>{i18n.radiation_therapy}</h1>
+        <p>Die Uroonkologie ist ein medizinisches Fachgebiet, das sich mit der Diagnose, Behandlung
+und Prävention von Tumorerkrankungen im urologischen Bereich befasst. Als Urologe und
+Radioonkologe in meiner Privatordination stelle ich Ihnen meine umfangreiche Erfahrung in
+der Uroonkologie zur Verfügung. </p>
+<p>Die Uroonkologie beschäftigt sich mit der Behandlung von bösartigen Tumoren, die das
+Harn-Ableitungssystem betreffen, einschließlich der Nieren, Harnleiter, Blase und Harnröhre.
+Sie umfasst auch die Diagnose und Behandlung von Krebserkrankungen der Prostata, Hoden
+und des Penis.</p>
+<p>In der Uroonkologie übernehme ich verschiedene Aufgabengebiete. Dazu gehören die
+Durchführung von Diagnosetests wie bildgebende Verfahren, Biopsien und
+Blutuntersuchungen, um die Art und das Stadium des Tumors zu bestimmen. Ich berate
+meine Patienten über die verschiedenen Behandlungsoptionen, darunter chirurgische
+Eingriffe, Strahlentherapie, Chemotherapie und immunbasierte Therapien. Zusätzlich
+betreue ich meine Patienten engmaschig und übernehme die Tumorboard-Zuweisungen,
+sowie die Besprechung der Ergebnisse. Während der Behandlung überwache ich zudem
+genauestens den Verlauf der Erkrankung.</p>
+<p>Bei tumorösen Erkrankungen des Harn-Ableitungssystems wie Nierenkrebs, Blasenkrebs und
+Harnröhrenkrebs besteht die Behandlung in der Regel aus einer Kombination von
+chirurgischen Eingriffen, Strahlentherapie und Chemotherapie. Moderne minimalinvasive
+Operationstechniken, wie die laparoskopische oder roboterassistierte Chirurgie, ermöglichen
+in der Regel eine potenzerhaltende (Prostatakarzinom) präzisere Entfernung von Tumoren
+und eine schnellere Genesung.</p>
+<p>Prostatakrebs ist eine der häufigsten Krebserkrankungen bei Männern. Die Behandlung kann
+je nach Stadium des Krebses eine aktive Überwachung, Operation, Strahlentherapie,
+
+Hormontherapie oder neue medikamentöse Behandlungen wie zielgerichtete Therapien
+umfassen.</p>
+<p>Hodenkrebs tritt vor allem bei jungen Männern auf und wird in der Regel durch eine
+Operation entfernt. Je nach Stadium und Risikofaktoren kann eine anschließende
+Chemotherapie, seltener Strahlentherapie, erforderlich sein.</p>
+<p>Peniskrebs ist eine seltene Erkrankung, bei der eine chirurgische Entfernung des Tumors in
+Kombination mit Lymphknotenentfernung oder Strahlentherapie durchgeführt werden kann.</p>
+<p>Als Urologe und Radioonkologe ist es mir ein besonderes
+Anliegen, diese beiden Fächer miteinander zu kombinieren und meinen Patienten mit
+Tumorerkrankungen des Urogenitalsystems eine einfühlsame und umfassende Betreuung zu
+bieten. Ich unterstütze sie bei der Entscheidungsfindung für die am besten geeignete
+Behandlungsmethode, erkläre ihnen die möglichen Risiken und Nebenwirkungen und stehe
+ihnen während des gesamten Behandlungsprozesses zur Seite.</p>
+<p>Die Uroonkologie ist ein sich ständig weiterentwickelndes Fachgebiet, und ich halte mich
+über neue medikamentöse Behandlungen und innovative Techniken auf dem Laufenden, um
+meinen Patienten die bestmöglichen Ergebnisse zu bieten. Gemeinsam mit meinem Team
+arbeite ich daran, den Fortschritt in der Uroonkologie zu nutzen und die Lebensqualität
+meiner Patienten zu verbessern.</p>
+
+
+        <ul className={style.description}>
+        <li><b>{i18n.uroocnological_diagnostics_therapy_and_followup_care_for_tumors}:</b></li>
+          <ul>
+            <li>{i18n.kidney_and_renal_pelvis}</li>
+            <li>{i18n.ureter}</li>
+            <li>{i18n.bladder}</li>
+            <li>{i18n.penis}</li>
+            <li>{i18n.testicles}</li>
+          </ul>
+          <li>{i18n.cancer_is_a_global_health_issue}</li>
+          <li>{i18n.approximately_one_third_of_all}</li>
+          <li>{i18n.in_recent_years}</li>
+          <li>{i18n.as_a_specialist_in_both_urology_and_radiooncology}</li>
+        </ul>
+      </TabPanel>
       <TabPanel value={value} index={3}>
       <img className={style.image} src="/assets/radio_oncology.jpg" alt={i18n.radiation_oncology} />
         <h1 className={style.title}>{i18n.radiation_oncology}</h1>
@@ -277,69 +340,7 @@ verbessern und ihnen Hoffnung und Heilung zu schenken.</p>
           <li>{i18n.radiation_therapy_is_not_only_concerned}</li>
         </ul>
       </TabPanel>
-      <TabPanel value={value} index={2}>
-      <img className={style.image} src="/assets/radio_therapy.jpg" alt={i18n.radiation_therapy} />
-        <h1 className={style.title}>{i18n.radiation_therapy}</h1>
-        <p>Die Uroonkologie ist ein medizinisches Fachgebiet, das sich mit der Diagnose, Behandlung
-und Prävention von Tumorerkrankungen im urologischen Bereich befasst. Als Urologe und
-Radioonkologe in meiner Privatordination stelle ich Ihnen meine umfangreiche Erfahrung in
-der Uroonkologie.</p>
-<p>Die Uroonkologie beschäftigt sich mit der Behandlung von bösartigen Tumoren, die das
-Harn-Ableitungssystem betreffen, einschließlich der Nieren, Harnleiter, Blase und Harnröhre.
-Sie umfasst auch die Diagnose und Behandlung von Krebserkrankungen der Prostata, Hoden
-und des Penis.</p>
-<p>In der Uroonkologie übernehme ich verschiedene Aufgabengebiete. Dazu gehören die
-Durchführung von Diagnosetests wie bildgebende Verfahren, Biopsien und
-Blutuntersuchungen, um die Art und das Stadium des Tumors zu bestimmen. Ich berate
-meine Patienten über die verschiedenen Behandlungsoptionen, darunter chirurgische
-Eingriffe, Strahlentherapie, Chemotherapie und immunbasierte Therapien. Zusätzlich
-betreue ich meine Patienten engmaschig und übernehme die Tumorboard-Zuweisungen,
-sowie die Besprechung der Ergebnisse. Während der Behandlung überwache ich zudem
-genauestens den Verlauf der Erkrankung.</p>
-<p>Bei tumorösen Erkrankungen des Harn-Ableitungssystems wie Nierenkrebs, Blasenkrebs und
-Harnröhrenkrebs besteht die Behandlung in der Regel aus einer Kombination von
-chirurgischen Eingriffen, Strahlentherapie und Chemotherapie. Moderne minimalinvasive
-Operationstechniken, wie die laparoskopische oder roboterassistierte Chirurgie, ermöglichen
-in der Regel eine potenzerhaltende (Prostatakarzinom) präzisere Entfernung von Tumoren
-und eine schnellere Genesung.</p>
-<p>Prostatakrebs ist eine der häufigsten Krebserkrankungen bei Männern. Die Behandlung kann
-je nach Stadium des Krebses eine aktive Überwachung, Operation, Strahlentherapie,
-
-Hormontherapie oder neue medikamentöse Behandlungen wie zielgerichtete Therapien
-umfassen.</p>
-<p>Hodenkrebs tritt vor allem bei jungen Männern auf und wird in der Regel durch eine
-Operation entfernt. Je nach Stadium und Risikofaktoren kann eine anschließende
-Chemotherapie, seltener Strahlentherapie, erforderlich sein.</p>
-<p>Peniskrebs ist eine seltene Erkrankung, bei der eine chirurgische Entfernung des Tumors in
-Kombination mit Lymphknotenentfernung oder Strahlentherapie durchgeführt werden kann.</p>
-<p>Als Urologe und Radioonkologe ist es mir ein besonderes
-Anliegen, diese beiden Fächer miteinander zu kombinieren und meinen Patienten mit
-Tumorerkrankungen des Urogenitalsystems eine einfühlsame und umfassende Betreuung zu
-bieten. Ich unterstütze sie bei der Entscheidungsfindung für die am besten geeignete
-Behandlungsmethode, erkläre ihnen die möglichen Risiken und Nebenwirkungen und stehe
-ihnen während des gesamten Behandlungsprozesses zur Seite.</p>
-<p>Die Uroonkologie ist ein sich ständig weiterentwickelndes Fachgebiet, und ich halte mich
-über neue medikamentöse Behandlungen und innovative Techniken auf dem Laufenden, um
-meinen Patienten die bestmöglichen Ergebnisse zu bieten. Gemeinsam mit meinem Team
-arbeite ich daran, den Fortschritt in der Uroonkologie zu nutzen und die Lebensqualität
-meiner Patienten zu verbessern.</p>
-
-
-        <ul className={style.description}>
-        <li><b>{i18n.uroocnological_diagnostics_therapy_and_followup_care_for_tumors}:</b></li>
-          <ul>
-            <li>{i18n.kidney_and_renal_pelvis}</li>
-            <li>{i18n.ureter}</li>
-            <li>{i18n.bladder}</li>
-            <li>{i18n.penis}</li>
-            <li>{i18n.testicles}</li>
-          </ul>
-          <li>{i18n.cancer_is_a_global_health_issue}</li>
-          <li>{i18n.approximately_one_third_of_all}</li>
-          <li>{i18n.in_recent_years}</li>
-          <li>{i18n.as_a_specialist_in_both_urology_and_radiooncology}</li>
-        </ul>
-      </TabPanel>
+      
       
     </Stack>
   </Box>

@@ -31,7 +31,7 @@
 @media screen and (max-width: 1200px) {
     .container{
         padding-bottom: 0;
-        height: 15vh;
+        height: max-content;
         width: 90%;
         flex-direction: column;
         justify-content: center;

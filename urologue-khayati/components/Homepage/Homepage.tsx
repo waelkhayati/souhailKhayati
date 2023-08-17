@@ -23,7 +23,7 @@ export default function Homepage(props: HomepageProps) {
     router.push({
       pathname: router.pathname,
       query: { 
-        page: 'services',
+        page: 'leistungen',
         tab: tab
        },
     });
@@ -34,7 +34,7 @@ export default function Homepage(props: HomepageProps) {
       pathname: router.pathname,
       query: { 
         ...router.query,
-        page: 'practice' 
+        page: 'wahlarzt' 
       },
     });
   };
@@ -49,7 +49,7 @@ export default function Homepage(props: HomepageProps) {
 
   return (
     <>
-    {activePage === 'homepage' && (
+    {activePage === 'home' && (
       <Stack className={style.container}>
         <img src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other"/>
         <Stack className={style.section1}>
@@ -99,8 +99,8 @@ export default function Homepage(props: HomepageProps) {
         </Box>
       </Stack>
       )}
-      {activePage === 'services' && <Services />}
-      {activePage === 'practice' && <Practice />}
+      {activePage === 'leistungen' && <Services />}
+      {activePage === 'wahlarzt' && <Practice />}
     </>
   )
 }

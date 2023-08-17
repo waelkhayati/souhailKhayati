@@ -15,7 +15,7 @@ export default function Header() {
       pathname: router.pathname,
       query: { 
         ...router.query,
-        page: 'homepage' 
+        page: 'home' 
       },
     });
   };

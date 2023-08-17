@@ -15,7 +15,7 @@ import Head from 'next/head';
 export default function Home() {
 
   const router = useRouter();
-  const [activePage, setActivePage] = React.useState('homepage');
+  const [activePage, setActivePage] = React.useState('home');
 
   const handlePageChange = (page: string) => {
     router.push({
@@ -36,17 +36,17 @@ export default function Home() {
 
   const renderContent = () => {
     switch (activePage) {
-      case 'homepage':
+      case 'home':
         return <Homepage activePage={activePage} onPageChange={setActivePage} />;
-      case 'services':
+      case 'leistungen':
         return <Services />;
-      case 'practice':
+      case 'wahlarzt':
         return <Practice />;
-      case 'doctor':
+      case 'arzt':
         return <Doctor />;
       // case 'ordination':
       //   return <Ordination />;
-      case 'contact':
+      case 'kontakt':
         return <Contact />;
         
       default:
@@ -145,7 +145,7 @@ export default function Home() {
 
 
       </Head>
-      {/* <Stack className={style.background}>
+      <Stack className={style.background}>
         <Stack className={style.body}>
           <Header />
           <Navbar activePage={activePage} onPageChange={handlePageChange} />
@@ -153,8 +153,7 @@ export default function Home() {
         </Stack>
       </Stack> 
       <Footer />
-      */}
-      Hello World!
+     
       
     </>
   );

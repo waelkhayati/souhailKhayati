@@ -13,8 +13,13 @@
 
 body{
     margin: 0 !important;
-    overflow-y: overlay !important;    
+    /* overflow-y: overlay !important;     */
+    overflow: auto !important;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
 
 a{
     color: var(--primary);

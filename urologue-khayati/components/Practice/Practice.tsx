@@ -20,6 +20,7 @@ export default function Practice() {
         delay: 4000,
         disableOnInteraction: false,
       }}
+      speed={1000}
       centeredSlides={true}
       effect={'fade'}
     >
@@ -34,6 +35,9 @@ export default function Practice() {
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
         <img src="/assets/office4.jpg"/>
+      </SwiperSlide>
+      <SwiperSlide className={styles.swiperSlide}>
+        <img src="/assets/office5.jpg"/>
       </SwiperSlide>
     </Swiper>
     <Stack className={styles.text}>
@@ -57,7 +61,7 @@ export default function Practice() {
         <p>Nein. Eine Überweisung des Hausarztes oder von einem anderen Facharzt ist nicht unbedingt erforderlich. Sollten Sie jedoch eine haben, dann nehmen Sie sie bitte mit, da wertvolle Informationen zu Ihren Beschwerden gelegentlich aufgelistet sind.</p>
         <br />
         <p>Bekomme ich von Ihnen Rezepte?</p>
-        <p>Selbstverständlich! Als Wahlarzt habe ich eine Rezepturbefugnis und kann Ihnen ein Wahlarztrezept mit Stempel ausstellen. Dieses können Sie wie ein Kassenrezept nach Bezahlung der Rezeptgebühr (<b>aktuell 6,50 Euro</b>) in jeder Apotheke einlösen.</p>
+        <p>Selbstverständlich! Als Wahlarzt habe ich eine Rezepturbefugnis und kann Ihnen ein Wahlarztrezept mit Stempel ausstellen. Dieses können Sie wie ein Kassenrezept nach Bezahlung der Rezeptgebühr (<b>aktuell 6,85 Euro</b>) in jeder Apotheke einlösen.</p>
 
         <p><b>Sollten Sie noch weitere Fragen haben, so steht Ihnen das freundliche Rezeptionspersonal in der Ordination oder ich persönlich via Email gerne zur Verfügung.</b></p>
     </Stack>
