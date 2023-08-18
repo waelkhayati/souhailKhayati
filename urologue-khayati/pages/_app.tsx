@@ -38,7 +38,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 location="bottom"
                 buttonText="Akzeptiere alle"
                 cookieName="cookieBanner"
-                style={{ background: "#1E1E1E", fontFamily:"" }}
+                style={{ background: "#1E1E1E", fontFamily:"Inter, sans-serif", fontSize: "15px" }}
               
                 buttonStyle={{ background: "var(--primary)", paddingLeft:"35px", paddingRight:"35px", color: "white", fontSize: "13px", height: "50px" }}
                 expires={150}
