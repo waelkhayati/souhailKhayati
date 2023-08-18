@@ -1,4 +1,4 @@
 # souhailKhayati
-mailjet: 
- email: ordination@urologe-khayati.at
- password: Urologie@1
+# mailjet: 
+# email: ordination@urologe-khayati.at
+# password: Urologie@1
