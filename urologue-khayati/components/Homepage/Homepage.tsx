@@ -18,7 +18,7 @@ export default function Homepage(props: HomepageProps) {
 
   const i18n = React.useContext(I18nContext);
 
-  const [activePage, setActivePage] = React.useState('homepage');
+  const [activePage, setActivePage] = React.useState('home');
   const navigateToServices = (tab: string) => {
     router.push({
       pathname: router.pathname,
