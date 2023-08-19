@@ -110,7 +110,7 @@ sexuell übertragbare Infektionen (STIs), Harnröhrenstrikturen und verschiedene
 Krebs wie Nierenkrebs, Blasenkrebs, Hodenkrebs und Prostatakrebs. Die Urologie behandelt
 auch urologische Erkrankungen bei Frauen, einschließlich Harnwegsinfektionen,
 Blasenentleerungsstörungen, Harninkontinenz und Beckenbodenproblemen. Darüber hinaus
-behandeln Urologen um angeborene urologische Anomalien, Harnwegsinfektionen,
+behandeln Urologen auch angeborene urologische Anomalien,
 Bettnässen und andere Harnwegsstörungen bei Kindern. Ich setze
 mich dafür ein, dass meine Patienten bestmöglich informiert sind um mit Ihnen im Konsens die bestmöglichen Ergebnisse zu erzielen. Die Zufriedenheit und das Vertrauen meiner Patienten sind für mich von großer
 Bedeutung, gerne helfe ich Ihnen dabei Ihre urologischen Anliegen
@@ -192,6 +192,8 @@ umfassend über ihre Diagnose und Behandlungsoptionen aufzuklären. Die vertraue
 Beziehung zu meinen Patienten steht im Mittelpunkt meiner Arbeit, und ich setze mich dafür
 ein, dass sie sich bei mir wohl und gut betreut fühlen.</p>
 
+<p>Folgende Leistungen werden von mir aangeboten:</p>
+
         <ul className={style.description}>
           
           <li>{i18n.semen_analysis}</li>
@@ -211,7 +213,7 @@ ein, dass sie sich bei mir wohl und gut betreut fühlen.</p>
 und Prävention von Tumorerkrankungen im urologischen Bereich befasst. Als Urologe und
 Radioonkologe in meiner Privatordination stelle ich Ihnen meine umfangreiche Erfahrung in
 der Uroonkologie zur Verfügung. </p>
-<p>Die Uroonkologie beschäftigt sich mit der Behandlung von bösartigen Tumoren, die das
+<p>Sie beschäftigt sich mit der Behandlung von bösartigen Tumoren, die das
 Harn-Ableitungssystem betreffen, einschließlich der Nieren, Harnleiter, Blase und Harnröhre.
 Sie umfasst auch die Diagnose und Behandlung von Krebserkrankungen der Prostata, Hoden
 und des Penis.</p>
@@ -286,7 +288,7 @@ werden individuell auf den Patienten und den spezifischen Tumor abgestimmt.</p>
         <p>Zusätzlich kann die Strahlentherapie auch bei bestimmten gutartigen Veränderungen
 eingesetzt werden, um Symptome zu lindern und die Fortschreitung der Erkrankung zu
 kontrollieren. Beispiele dafür sind die Behandlung von Fersensporn zur Reduzierung von
-Entzündungen und Schmerzen, die Anwendung bei Omartrose (einer Form der
+Entzündungen und Schmerzen, die Anwendung bei Omarthrose (einer Form der
 Schultergelenksarthrose) zur Entzündungshemmung und Schmerzlinderung sowie die
 Behandlung der Dupuytren-Kontraktur, bei der verdicktes Bindegewebe in der Handfläche zu
 
