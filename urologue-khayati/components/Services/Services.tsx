@@ -101,7 +101,7 @@ export default function VerticalTabs() {
 Prävention einer Vielzahl von urologischen Erkrankungen bei Menschen jeden Alters und
 Geschlechts befasst. Urologen übernehmen eine Vielzahl von Aufgaben, darunter die
 Behandlung von Harnwegsinfektionen, Harnsteinleiden, Blasenentleerungsstörungen,
-Blasen- und Harnröhrenentzündungen, Harninkontinenz und Harnverhaltung. Sie sind auch
+Blasen- und Harnröhrenentzündungen, Harninkontinenz und Harnverhalt. Sie sind auch
 spezialisiert auf die Diagnose, Überwachung und Behandlung von Prostataerkrankungen wie
 gutartiger Prostatavergrößerung (Benigne Prostatahyperplasie) und Prostatakrebs. Zu den
 gängigen Krankheiten und Problemen, mit denen sich Urologen befassen, gehören
@@ -110,12 +110,10 @@ sexuell übertragbare Infektionen (STIs), Harnröhrenstrikturen und verschiedene
 Krebs wie Nierenkrebs, Blasenkrebs, Hodenkrebs und Prostatakrebs. Die Urologie behandelt
 auch urologische Erkrankungen bei Frauen, einschließlich Harnwegsinfektionen,
 Blasenentleerungsstörungen, Harninkontinenz und Beckenbodenproblemen. Darüber hinaus
-kümmern sich Urologen um angeborene urologische Anomalien, Harnwegsinfektionen,
+behandeln Urologen um angeborene urologische Anomalien, Harnwegsinfektionen,
 Bettnässen und andere Harnwegsstörungen bei Kindern. Ich setze
-mich dafür ein, dass meine Patienten bestmöglich informiert sind und gemeinsam treffen wir
-Entscheidungen über ihre Gesundheitsversorgung, um die bestmöglichen Ergebnisse zu
-erzielen. Die Zufriedenheit und das Vertrauen meiner Patienten sind für mich von großer
-Bedeutung, und ich bin dankbar, dass ich ihnen helfen kann, ihre urologischen Anliegen
+mich dafür ein, dass meine Patienten bestmöglich informiert sind um mit Ihnen im Konsens die bestmöglichen Ergebnisse zu erzielen. Die Zufriedenheit und das Vertrauen meiner Patienten sind für mich von großer
+Bedeutung, gerne helfe ich Ihnen dabei Ihre urologischen Anliegen
 bestmöglich zu bewältigen.</p>
         <ul className={style.description}>
           
