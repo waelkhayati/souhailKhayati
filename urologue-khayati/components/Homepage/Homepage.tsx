@@ -52,7 +52,17 @@ export default function Homepage(props: HomepageProps) {
     <>
     {activePage === 'home' && (
       <Stack className={style.container}>
-        <Image loading='lazy' height={350} width={2000} src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other"/>
+      <Image
+        alt="man_and_woman_lying_on_pillows_while_looking_at_each_other"
+        loading="lazy"
+        width={2000}
+        height={350}
+        decoding="async"
+        data-nimg="1"
+        src="/_next/image?url=%2Fassets%2Fhero.jpg&amp;w=3840&amp;q=75"
+        style={{ color: "transparent" }}
+      />        
+{/* loading='lazy' height={350} width={2000} src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other" */}
         <Stack className={style.section1}>
           <h1>{i18n.welcome_to_my_private_ordination_intro}</h1>
           <p>{i18n.in_my_ordination}</p>
