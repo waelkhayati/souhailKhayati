@@ -32,4 +32,14 @@ p, a, ul, li{
     line-height: 1.5;
 }
 
+.MuiInput-root:before {
+    border-color: var(--tertiary) !important
+  }
+.MuiInput-root:after {
+    border-color: var(--primary) !important
+  }
+.MuiInputLabel-root.Mui-focused {
+    color: var(--primary)
+  }
+
 

@@ -1,46 +1,88 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import style from './contact.module.css'
-import { Stack, Box, Button, TextField, useMediaQuery } from '@mui/material'
+import { Stack, Box, Button, TextField, useMediaQuery, AlertColor, Alert } from '@mui/material'
 import { I18nContext } from '../../pages/_app'
 import { useForm } from 'react-hook-form';
-import { sendContactForm } from '../../services/api';
-import { z } from 'zod';
-
+import { z, ZodError } from 'zod';
+import emailjs from '@emailjs/browser';
+import Snackbar from '@mui/material/Snackbar';
 
 const schema = z.object({
   name: z.string().min(1, "please_enter_your_name"),
-  email: z.string().email("invalid_email").min(1, "please_enter_your_email"),
+  email: z.string().min(1, "please_enter_your_email").email("invalid_email"),
   phone: z.string().min(1, "please_enter_your_phone_number"),
   message: z.string().min(1, "please_write_your_message"),
 });
-
 
 export default function Contact() {
 
   const i18n = React.useContext(I18nContext);
   const mobile = useMediaQuery('(max-width: 786px)');
 
-  const { register, handleSubmit, formState: { errors } } = useForm(
-    {
-      mode: "onChange",
-      defaultValues: {
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      },
-    }
-  );
-  const onSubmit = async (data:any) => {
+ 
+  const { register, handleSubmit, formState: { errors }, reset, setError } = useForm({
+    mode: "onChange",
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+  });
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const [snackOpen, setSnackOpen] = useState(false)
+
+  const onSubmit = async (data: any) => {
+    // Manually validate the data using the Zod schema
     try {
-      const validatedData = schema.parse(data);
-      const res = await sendContactForm(validatedData);
-      console.log(res.json());
-    } catch (error) {
-      console.error(error);
+      schema.parse(data);
+  
+      // If validation succeeds, proceed with sending the email
+      if (formRef.current) {
+        await emailjs.sendForm('service_3im0rvj', 'template_ysueh9o', formRef.current, 'uehMzW-i4ZMBt8lLc')
+          .then((result) => {
+            console.log(result.text);
+            reset(); // Reset the form after successful submission
+            setSnackOpen(true)
+          })
+          .catch((error) => {
+            console.log(error.text);
+          });
+      }
+    } catch (validationError) {
+      if (validationError instanceof ZodError) {
+        console.log(validationError.message);
+        // Handle validation error, you could update your error state here
+        setError("name", {
+          type: "manual",
+          message: "please_enter_your_name"
+        });
+        setError("email", {
+          type: "manual",
+          message: "please_enter_your_email"
+        });
+        
+        setError("phone", {
+          type: "manual",
+          message: "please_enter_your_phone_number"
+        });
+        setError("message", {
+            type: "manual",
+            message: "please_write_your_message"
+        });
+      }
     }
   };
 
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setSnackOpen(false);
+  };
 
   return (
     <>
@@ -68,122 +110,50 @@ export default function Contact() {
            <h1>{i18n.phone}</h1>
            <p>+43 664 1441636 </p>
            <h1>{i18n.our_work_hours}</h1>
-           <p style={{maxWidth:"400px"}}>{i18n.our_work_hours_2}</p> 
+           <p >{i18n.our_work_hours_2}</p> 
         </Stack>
 
         
       </Box>
 
-      {/* <h1 className={style.title}>{i18n.make_an_appointment}</h1>
+      <h1 className={style.title}>{i18n.make_an_appointment}</h1>
 
-        <Stack direction={mobile?'column':'row'} spacing={5} className={style.container2}>
-        <Stack className={style.image}>
+        <Stack className={style.container2}>
+        {/* <Stack className={style.image}>
           <img src="/assets/ordination.jpg" alt=""/>
-        </Stack>
+        </Stack> */}
         
-        <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
+        <form ref={formRef} className={style.form} onSubmit={handleSubmit(onSubmit)}>
         
-
           <TextField
-            {...register("name")}
-            id="name"
-            name="name"
-            label={i18n.name}
-            variant="standard"
-            fullWidth
-            className={style.input}
+            {...register("name")} id="name" name="name" label={i18n.name} variant="standard" fullWidth
             error={errors.name !== undefined}
-            helperText={errors.name?.message && i18n[errors.name.message]}
-            sx={{
-              '& .MuiInput-root:before': {
-                borderColor: 'var(--tertiary) !important',
-              },
-              '& .MuiInput-root:after': {
-                borderColor: 'var(--primary) !important',
-              },
-              '& .MuiInputLabel-root.Mui-focused': {
-                color: 'var(--primary)',
-              },
-            }}
+            helperText={errors.name?.message && i18n[errors.name.message]}   
           />
 
           <TextField
-            {...register("email")}
-            id="email"
-            name="email"
-            label={i18n.email}
-            variant="standard"
-            fullWidth
-            className={style.input}
+            {...register("email")} id="email" name="email" label={i18n.email} variant="standard" fullWidth
             error={errors.email !== undefined}
-            helperText={errors.email?.message && i18n[errors.email.message]}
-            sx={{
-              '& .MuiInput-root:before': {
-                borderColor: 'var(--tertiary) !important',
-              },
-              '& .MuiInput-root:after': {
-                borderColor: 'var(--primary) !important',
-              },
-              '& .MuiInputLabel-root.Mui-focused': {
-                color: 'var(--primary)',
-              },
-            }}
+            helperText={errors.email?.message && i18n[errors.email.message]}       
           />
+  
 
           <TextField
-            {...register("phone")}
-            id="phone"
-            name="phone"
-            label={i18n.phone}
-            variant="standard"
-            fullWidth
-            className={style.input}
+            {...register("phone")} id="phone" name="phone" label={i18n.phone} variant="standard" fullWidth
             error={errors.phone !== undefined}
-            helperText={errors.email?.message && i18n[errors.email.message]}
-            sx={{
-              '& .MuiInput-root:before': {
-                borderColor: 'var(--tertiary) !important',
-              },
-              '& .MuiInput-root:after': {
-                borderColor: 'var(--primary) !important',
-              },
-              '& .MuiInputLabel-root.Mui-focused': {
-                color: 'var(--primary)',
-              },
-            }}
+            helperText={errors.phone?.message && i18n[errors.phone.message]}
           />
-
+       
           <TextField
-            {...register("message")}
-            id="message"
-            name="message"
-            label={i18n.message}
-            placeholder={i18n.write_your_message_here}
-            multiline
-            rows={8}
-            variant="standard"
-            fullWidth
-            className={style.input}
+            {...register("message")} id="message" name="message" label={i18n.message}
+            placeholder={i18n.write_your_message_here} multiline rows={8} variant="standard" fullWidth
             error={errors.message !== undefined}
-            helperText={errors.email?.message && i18n[errors.email.message]}
-            sx={{
-              '& .MuiInput-root:before': {
-                borderColor: 'var(--tertiary) !important',
-              },
-              '& .MuiInput-root:after': {
-                borderColor: 'var(--primary) !important',
-              },
-              '& .MuiInputLabel-root.Mui-focused': {
-                color: 'var(--primary)',
-              },
-            }}
+            helperText={errors.message?.message && i18n[errors.message.message]}
           />
-
           <Stack sx={{ marginLeft: 'auto' }}>
             <Button 
               type="submit"
-              sx={{
-                paddingX:"35px", 
+              sx={{ paddingX:"35px", 
                 background:"var(--primary)", 
                 color:"white", 
                 "&:hover": {
@@ -194,10 +164,9 @@ export default function Contact() {
               {i18n.send}   
             </Button>
           </Stack>
-          
 
         </form>
-        </Stack> */}
+        </Stack>
 
       <Stack className={style.imprint}>
           <h3>{i18n.imprint_and_legal_information}</h3>
@@ -275,6 +244,12 @@ export default function Contact() {
           <p><b>Telefonnummer: </b>0664 4028584</p>
           <p><b>Email: </b>ordination@urologe-khayati.at</p>
       </Stack>
+
+      <Snackbar open={snackOpen} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          This is a success message!
+        </Alert>
+      </Snackbar>
     </>
   )
 }
