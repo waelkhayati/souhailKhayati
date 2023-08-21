@@ -3,6 +3,7 @@ import style from './doctor.module.css';
 import { Stack, useMediaQuery } from '@mui/material';
 import { I18nContext } from '../../pages/_app';
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function Doctor() {
 
@@ -14,7 +15,7 @@ export default function Doctor() {
       <Stack className={style.container}>
       <Stack className={style.head} direction={mobile?'column':'row'}>
         <Stack>
-          <img className={style.profile_pic} src="/assets/portrait.jpg" alt="" />
+          <Image loading='lazy' className={style.profile_pic} src="/assets/portrait.jpg" alt="Dr. Souhail Khayati" width={300} height={300} />
         </Stack>
         <Stack>
         <h1>Dr. Souhail KHAYATI</h1>
@@ -42,25 +43,25 @@ export default function Doctor() {
         
             <Stack className={style.OGU} alignItems={"center"}>
               <Link href={'https://www.uro.at/'} target='blank'>
-                <img src="/assets/OGU.png" alt="ÖGU" />
+                <Image loading='lazy' width={150} height={150} src="/assets/OGU.png" alt="ÖGU" />
               </Link>
               <p>Österreichische Gesellschaft für Urologie und Andrologie</p>
             </Stack>
             <Stack className={style.EAU} alignItems={"center"}>
               <Link href={'https://uroweb.org/'} target='blank'>
-                <img src="/assets/EAU.png" alt="EAU" />
+                <Image loading='lazy' width={150} height={150} src="/assets/EAU.png" alt="EAU" />
               </Link>
               <p>Eruopean Assosication of Urology</p>
             </Stack>
             <Stack className={style.AND} alignItems={"center"}>
               <Link href={'https://www.andrologie.at/'} target='blank'>
-                <img src="/assets/AND.svg" alt="ANDROLOGIE" />
+                <Image loading='lazy' width={150} height={150} src="/assets/AND.svg" alt="ANDROLOGIE" />
               </Link>
               <p>Arbeitskreis für Andrologie und sexuelle Funktionsstörungen</p>
             </Stack>
             <Stack className={style.OGRO} alignItems={"center"}>
               <Link href={'http://www.oegro.com/'} target='blank'>
-              <img src="/assets/OGRO.png" alt="OGRO" />
+                <Image loading='lazy' width={150} height={150} src="/assets/OGRO.png" alt="OGRO" />
              </Link>
               <p>Österreichische Gesellschaft für Radioonkologie</p>
             </Stack>  

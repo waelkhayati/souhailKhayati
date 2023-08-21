@@ -6,6 +6,7 @@ import { I18nContext } from '../../pages/_app'
 import Services from '../Services/Services'
 import Practice from '../Practice/Practice'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 type HomepageProps = {
   activePage: string,
@@ -51,7 +52,7 @@ export default function Homepage(props: HomepageProps) {
     <>
     {activePage === 'home' && (
       <Stack className={style.container}>
-        <img src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other"/>
+        <Image loading='lazy' height={350} width={2000} src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other"/>
         <Stack className={style.section1}>
           <h1>{i18n.welcome_to_my_private_ordination_intro}</h1>
           <p>{i18n.in_my_ordination}</p>

@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './card.module.css'
-import { Box, Stack } from '@mui/material'
+import { Stack } from '@mui/material'
+import Image from 'next/image'
 
 type CardProps = {
     image: string,
@@ -15,7 +16,7 @@ export default function Card(props: CardProps) {
   return (
     <>
         <Stack className={style.container} >
-            <img src={props.image} alt={props.alt}/>
+            <Image width={420} height={200} src={props.image} alt={props.alt} loading='lazy'/>
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             <span onClick={props.linkRef}>{props.link}</span>
