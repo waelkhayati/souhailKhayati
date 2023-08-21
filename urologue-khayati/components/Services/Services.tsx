@@ -97,7 +97,7 @@ export default function VerticalTabs() {
     </Tabs>
     <Stack className={style.content}>
       <TabPanel value={value} index={0}>
-        <Image width={2000} height={250} loading='lazy' className={style.image} src="/assets/andrology.jpg" alt={i18n.urology} />
+        <Image width={1500} height={250} loading='lazy' className={style.image} src="/assets/andrology.jpg" alt={i18n.urology} />
         <h1 className={style.title}>{i18n.urology}</h1>
         <p>Die Urologie ist ein breites Fachgebiet, das sich mit der Diagnose, Behandlung und
 Prävention einer Vielzahl von urologischen Erkrankungen bei Menschen jeden Alters und
@@ -156,7 +156,7 @@ bestmöglich zu bewältigen.</p>
         </ul>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Image width={2000} height={250} loading='lazy' className={style.image} src="/assets/urology.jpg" alt={i18n.andrology} />
+        <Image width={1500} height={250} loading='lazy' className={style.image} src="/assets/urology.jpg" alt={i18n.andrology} />
         <h1 className={style.title}>{i18n.andrology}</h1>
         <p>Die Andrologie ist ein medizinisches Fachgebiet, das sich mit Erkrankungen und Störungen
 des männlichen Fortpflanzungssystems befasst. Als Facharzt für Andrologie kümmere ich
@@ -209,7 +209,7 @@ ein, dass sie sich bei mir wohl und gut betreut fühlen.</p>
         </ul>          
       </TabPanel>
       <TabPanel value={value} index={2}>
-      <Image width={2000} height={250} loading='lazy' className={style.image} src="/assets/radio_therapy.jpg" alt={i18n.radiation_therapy} />
+      <Image width={1500} height={250} loading='lazy' className={style.image} src="/assets/radio_therapy.jpg" alt={i18n.radiation_therapy} />
         <h1 className={style.title}>{i18n.radiation_therapy}</h1>
         <p>Die Uroonkologie ist ein medizinisches Fachgebiet, das sich mit der Diagnose, Behandlung
 und Prävention von Tumorerkrankungen im urologischen Bereich befasst. Als Urologe und
@@ -272,7 +272,7 @@ meiner Patienten zu verbessern.</p>
         </ul>
       </TabPanel>
       <TabPanel value={value} index={3}>
-      <Image width={2000} height={250} loading='lazy' className={style.image} src="/assets/radio_oncology.jpg" alt={i18n.radiation_oncology} />
+      <Image width={1500} height={250} loading='lazy' className={style.image} src="/assets/radio_oncology.jpg" alt={i18n.radiation_oncology} />
         <h1 className={style.title}>{i18n.radiation_oncology}</h1>
 
         <p>Die Radioonkologie und Strahlentherapie ist ein medizinisches Fachgebiet, das sich mit der
