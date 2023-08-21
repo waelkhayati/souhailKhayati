@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 cookieName="cookieBanner"
                 style={{ background: "#1E1E1E", fontFamily:"Inter, sans-serif", fontSize: "15px" }}
               
-                buttonStyle={{ background: "var(--primary)", paddingLeft:"35px", paddingRight:"35px", color: "white", fontSize: "13px", height: "50px" }}
+                buttonStyle={{ background: "var(--primary)", paddingLeft:"35px", paddingRight:"35px", color: "white", fontSize: "13px", height: "50px", borderRadius:"4px"  }}
                 expires={150}
               >
 Wir verwenden Cookies, um Ihr Erlebnis auf unserer Website zu verbessern und Ihnen relevante Inhalte anzubieten. Indem Sie auf &quot;Akzeptieren&quot; klicken, stimmen Sie der Verwendung aller Cookies zu. Wir möchten darauf hinweisen, dass Ihre Daten bei uns sicher sind und wir sorgfältig mit ihnen umgehen. Weitere Informationen finden Sie in unserer Datenschutzrichtlinie.

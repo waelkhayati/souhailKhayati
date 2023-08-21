@@ -126,27 +126,27 @@ export default function Contact() {
         <form ref={formRef} className={style.form} onSubmit={handleSubmit(onSubmit)}>
         
           <TextField
-            {...register("name")} id="name" name="name" label={i18n.name} variant="standard" fullWidth
+            {...register("name")} id="name" name="name" label={i18n.name} variant="filled" fullWidth
             error={errors.name !== undefined}
             helperText={errors.name?.message && i18n[errors.name.message]}   
           />
 
           <TextField
-            {...register("email")} id="email" name="email" label={i18n.email} variant="standard" fullWidth
+            {...register("email")} id="email" name="email" label={i18n.email} variant="filled" fullWidth
             error={errors.email !== undefined}
             helperText={errors.email?.message && i18n[errors.email.message]}       
           />
   
 
           <TextField
-            {...register("phone")} id="phone" name="phone" label={i18n.phone} variant="standard" fullWidth
+            {...register("phone")} id="phone" name="phone" label={i18n.phone} variant="filled" fullWidth
             error={errors.phone !== undefined}
             helperText={errors.phone?.message && i18n[errors.phone.message]}
           />
        
           <TextField
             {...register("message")} id="message" name="message" label={i18n.message}
-            placeholder={i18n.write_your_message_here} multiline rows={8} variant="standard" fullWidth
+            placeholder={i18n.write_your_message_here} multiline rows={8} variant="filled" fullWidth
             error={errors.message !== undefined}
             helperText={errors.message?.message && i18n[errors.message.message]}
           />
