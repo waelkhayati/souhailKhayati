@@ -5,7 +5,7 @@ import "swiper/css";
 import {  EffectFade, Autoplay } from "swiper";
 import { Stack } from '@mui/material';
 import 'swiper/css/effect-fade';
-
+import Image from 'next/image'
 
 export default function Practice() {
   return (
@@ -25,19 +25,19 @@ export default function Practice() {
       effect={'fade'}
     >
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/office1.jpg"/>
+        <Image width={2000} height={450} loading='lazy' src="/assets/office1.jpg" alt='Bürobild'/>
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/office2.jpg"/>
+        <Image width={2000} height={450} loading='lazy' src="/assets/office2.jpg" alt='Bürobild'/>
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/office3.jpg"/>
+        <Image width={2000} height={450} loading='lazy' src="/assets/office3.jpg" alt='Bürobild'/>
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/office4.jpg"/>
+        <Image width={2000} height={450} loading='lazy' src="/assets/office4.jpg" alt='Bürobild'/>
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
-        <img src="/assets/office5.jpg"/>
+        <Image width={2000} height={450} loading='lazy' src="/assets/office5.jpg" alt='Bürobild'/>
       </SwiperSlide>
     </Swiper>
     <Stack className={styles.text}>

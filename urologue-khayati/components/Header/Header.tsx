@@ -3,6 +3,7 @@ import { Box, Stack, useMediaQuery } from '@mui/material'
 import style from './header.module.css'
 import { I18nContext } from '../../pages/_app'
 import { useRouter } from 'next/router';
+import Image from 'next/image'
 
 export default function Header() {
 
@@ -25,7 +26,7 @@ export default function Header() {
     <>
       <Box className={style.container}>
         <Stack direction={mobile?"column":"row"} className={style.logo} onClick={navigateToHomepage}>
-          <img src="assets/Logo.svg" alt="logo" className={style.image}/>
+          <Image height={100} width={100} src="assets/Logo.svg" alt="logo" className={style.image}/>
           <Stack direction="column" marginY={"auto"}>
              <Stack direction="row" spacing={1} className={style.name}>
               <span className={style.text}>UROLOGE KHAYATI</span>

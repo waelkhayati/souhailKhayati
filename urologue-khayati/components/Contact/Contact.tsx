@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import style from './contact.module.css'
-import { Stack, Box, Button, TextField, useMediaQuery, AlertColor, Alert } from '@mui/material'
+import { Stack, Box, Button, TextField, useMediaQuery, Alert } from '@mui/material'
 import { I18nContext } from '../../pages/_app'
 import { useForm } from 'react-hook-form';
 import { z, ZodError } from 'zod';
@@ -246,8 +246,8 @@ export default function Contact() {
       </Stack>
 
       <Snackbar open={snackOpen} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-          This is a success message!
+        <Alert variant='filled' onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+        Nachricht erfolgreich gesendet!
         </Alert>
       </Snackbar>
     </>
