@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react'
 import style from './contact.module.css'
-import { Stack, Box, Button, TextField, useMediaQuery, Alert } from '@mui/material'
+import { Stack, Box, Button, TextField, Alert, useMediaQuery, FormHelperText } from '@mui/material'
 import { I18nContext } from '../../pages/_app'
 import { useForm } from 'react-hook-form';
 import { z, ZodError } from 'zod';
 import emailjs from '@emailjs/browser';
 import Snackbar from '@mui/material/Snackbar';
+import ReCAPTCHA from 'react-google-recaptcha';
+
 
 const schema = z.object({
   name: z.string().min(1, "please_enter_your_name"),
@@ -14,10 +16,11 @@ const schema = z.object({
   message: z.string().min(1, "please_write_your_message"),
 });
 
+
 export default function Contact() {
 
   const i18n = React.useContext(I18nContext);
-  const mobile = useMediaQuery('(max-width: 786px)');
+  const mobile = useMediaQuery('(max-width: 768px)');
 
  
   const { register, handleSubmit, formState: { errors }, reset, setError } = useForm({
@@ -27,12 +30,15 @@ export default function Contact() {
       email: "",
       phone: "",
       message: "",
+      captcha: ""
     },
   });
 
   const formRef = useRef<HTMLFormElement>(null);
 
   const [snackOpen, setSnackOpen] = useState(false)
+  const [captchaIsDone, setCaptchaIsDone] = useState(false)
+  const [captchaError, setCaptchaError] = useState(false)
 
   const onSubmit = async (data: any) => {
     // Manually validate the data using the Zod schema
@@ -40,11 +46,14 @@ export default function Contact() {
       schema.parse(data);
   
       // If validation succeeds, proceed with sending the email
-      if (formRef.current) {
+      if (formRef.current && captchaIsDone) {
+
         await emailjs.sendForm('service_3im0rvj', 'template_ysueh9o', formRef.current, 'uehMzW-i4ZMBt8lLc')
           .then((result) => {
             console.log(result.text);
             reset(); // Reset the form after successful submission
+            grecaptcha.reset();
+            setCaptchaIsDone(false)
             setSnackOpen(true)
           })
           .catch((error) => {
@@ -72,6 +81,13 @@ export default function Contact() {
             type: "manual",
             message: "please_write_your_message"
         });
+        setError("captcha", {
+          type: "manual",
+          message: "Lösen Sie das Captcha, um zu bestätigen, dass Sie kein Roboter sind"
+      });
+      }
+      if (!captchaIsDone){
+        setCaptchaError(true)
       }
     }
   };
@@ -83,6 +99,7 @@ export default function Contact() {
 
     setSnackOpen(false);
   };
+
 
   return (
     <>
@@ -125,6 +142,8 @@ export default function Contact() {
         
         <form ref={formRef} className={style.form} onSubmit={handleSubmit(onSubmit)}>
         
+        
+
           <TextField
             {...register("name")} id="name" name="name" label={i18n.name} variant="filled" fullWidth
             error={errors.name !== undefined}
@@ -150,10 +169,35 @@ export default function Contact() {
             error={errors.message !== undefined}
             helperText={errors.message?.message && i18n[errors.message.message]}
           />
-          <Stack sx={{ marginLeft: 'auto' }}>
+
+
+
+          <Stack className={style.hello} justifyContent={'space-between'} direction={mobile?"column":"row"}>
+
+          <Box width={"304px"} style={mobile?{marginLeft:"auto"}:{}}>
+          <ReCAPTCHA
+            sitekey='6Lcprc0nAAAAAPs9QBtfOBvX_oD1-nqGShDiMI2q'
+            onChange={()=>{setCaptchaIsDone(true), setCaptchaError(false)}}
+          />
+
+          {captchaError&&<FormHelperText sx={{color:"#d32f2f"}}>Lösen Sie das Captcha, um zu bestätigen, dass Sie kein Roboter sind</FormHelperText>}
+          </Box>
             <Button 
               type="submit"
-              sx={{ paddingX:"35px", 
+              
+              sx={mobile?{
+                width: "100px", 
+                height:"40px",
+                ml:"auto",
+                mt:"25px",
+                background:"var(--primary)", 
+                color:"white", 
+                "&:hover": {
+                  background: "transparent",
+                  color: "var(--primary)",
+                },}:{
+                width: "100px", 
+                height:"40px",
                 background:"var(--primary)", 
                 color:"white", 
                 "&:hover": {

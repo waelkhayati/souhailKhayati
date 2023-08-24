@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { createContext, useEffect, useState } from 'react';
 import '../styles/globals.css';
 import CookieConsent from "react-cookie-consent";
-
+import Contact from "../components/Contact/Contact";
 
 export const I18nContext = createContext({} as any);
 export default function MyApp({ Component, pageProps }: AppProps) {

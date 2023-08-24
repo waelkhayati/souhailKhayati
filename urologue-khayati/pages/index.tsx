@@ -118,7 +118,7 @@ export default function Home() {
         <meta property="twitter:url" content="https://www.urologe-khayati.at"/>
 
         <link rel="canonical" href="https://www.urologe-khayati.at"/>
-
+        <script src='https://www.google.com/recaptcha/api.js?onload=getcaptcharesponse&render=explicit' async defer></script>
         <script type="application/ld+json">
           {JSON.stringify({
               "@context": "http://schema.org",
