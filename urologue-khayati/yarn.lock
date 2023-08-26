@@ -2557,6 +2557,11 @@ react-is@^18.2.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-recaptcha-x@^1.1.16:
+  version "1.1.16"
+  resolved "https://registry.yarnpkg.com/react-recaptcha-x/-/react-recaptcha-x-1.1.16.tgz#1dc8f7145306b8da5ca75299203f8ca3b15b3d64"
+  integrity sha512-2ufAbZs1Lb8L6RxWkc1pfOpftZ+DNbtjF9y3kyeDe3avhhutlVyaXCH0BWkt/NWwljG6YgXo2u+a7hUPLmQZHg==
+
 react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
@@ -2573,6 +2578,10 @@ react@18.2.0:
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
+
+recaptcha-v2v3@peterwby/react-recaptcha-x:
+  version "1.1.19"
+  resolved "https://codeload.github.com/peterwby/react-recaptcha-x/tar.gz/efca4522ffef91739e05bb4f8d7f56f1cd97a63b"
 
 regenerator-runtime@^0.13.11:
   version "0.13.11"
