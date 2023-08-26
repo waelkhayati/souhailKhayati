@@ -1,11 +1,19 @@
 import React, { useRef, useState } from 'react'
 import style from './contact.module.css'
-import { Stack, Box, Button, TextField, useMediaQuery, Alert } from '@mui/material'
+import { Stack, Box, Button, TextField, Alert, useMediaQuery, FormHelperText } from '@mui/material'
 import { I18nContext } from '../../pages/_app'
 import { useForm } from 'react-hook-form';
 import { z, ZodError } from 'zod';
 import emailjs from '@emailjs/browser';
 import Snackbar from '@mui/material/Snackbar';
+import {
+  EReCaptchaV2Size,
+  EReCaptchaV2Theme,
+  ReCaptchaProvider,
+  ReCaptchaV2,
+} from 'react-recaptcha-x';
+
+
 
 const schema = z.object({
   name: z.string().min(1, "please_enter_your_name"),
@@ -14,10 +22,11 @@ const schema = z.object({
   message: z.string().min(1, "please_write_your_message"),
 });
 
+
 export default function Contact() {
 
   const i18n = React.useContext(I18nContext);
-  const mobile = useMediaQuery('(max-width: 786px)');
+  const mobile = useMediaQuery('(max-width: 768px)');
 
  
   const { register, handleSubmit, formState: { errors }, reset, setError } = useForm({
@@ -27,12 +36,20 @@ export default function Contact() {
       email: "",
       phone: "",
       message: "",
+      captcha: ""
     },
   });
 
   const formRef = useRef<HTMLFormElement>(null);
 
   const [snackOpen, setSnackOpen] = useState(false)
+  const [captchaIsDone, setCaptchaIsDone] = useState(false)
+  const [captchaError, setCaptchaError] = useState(false)
+
+  const captchaCallback = () => {
+    setCaptchaIsDone(true) 
+    setCaptchaError(false)
+  }
 
   const onSubmit = async (data: any) => {
     // Manually validate the data using the Zod schema
@@ -40,11 +57,14 @@ export default function Contact() {
       schema.parse(data);
   
       // If validation succeeds, proceed with sending the email
-      if (formRef.current) {
+      if (formRef.current && captchaIsDone) {
+
         await emailjs.sendForm('service_3im0rvj', 'template_ysueh9o', formRef.current, 'uehMzW-i4ZMBt8lLc')
           .then((result) => {
             console.log(result.text);
             reset(); // Reset the form after successful submission
+            grecaptcha.reset();
+            setCaptchaIsDone(false)
             setSnackOpen(true)
           })
           .catch((error) => {
@@ -72,6 +92,13 @@ export default function Contact() {
             type: "manual",
             message: "please_write_your_message"
         });
+        setError("captcha", {
+          type: "manual",
+          message: "Lösen Sie das Captcha, um zu bestätigen, dass Sie kein Roboter sind"
+      });
+      }
+      if (!captchaIsDone){
+        setCaptchaError(true)
       }
     }
   };
@@ -83,6 +110,15 @@ export default function Contact() {
 
     setSnackOpen(false);
   };
+
+  // ReactDOM.render(
+  //   <ReCAPTCHA
+  //           sitekey=''
+  //           onChange={()=>{setCaptchaIsDone(true), setCaptchaError(false)}}
+  //         />, 
+  //         document.getElementsByClassName("captcha")
+  // )
+
 
   return (
     <>
@@ -123,49 +159,63 @@ export default function Contact() {
           <img src="/assets/ordination.jpg" alt=""/>
         </Stack> */}
         
-        <form ref={formRef} className={style.form} onSubmit={handleSubmit(onSubmit)}>
+          <form ref={formRef} className={style.form} onSubmit={handleSubmit(onSubmit)}>  
+
+            <TextField
+              {...register("name")} id="name" name="name" label={i18n.name} variant="filled" fullWidth type='name'
+              error={errors.name !== undefined}
+              helperText={errors.name?.message && i18n[errors.name.message]}   
+            />
+
+            <TextField
+              {...register("email")} id="email" name="email" label={i18n.email} variant="filled" fullWidth type='email'
+              error={errors.email !== undefined}
+              helperText={errors.email?.message && i18n[errors.email.message]}       
+            />
+
+            <TextField
+              {...register("phone")} id="phone" name="phone" label={i18n.phone} variant="filled" fullWidth type='tel'
+              error={errors.phone !== undefined}
+              helperText={errors.phone?.message && i18n[errors.phone.message]}
+            />
         
-          <TextField
-            {...register("name")} id="name" name="name" label={i18n.name} variant="filled" fullWidth
-            error={errors.name !== undefined}
-            helperText={errors.name?.message && i18n[errors.name.message]}   
-          />
+            <TextField
+              {...register("message")} id="message" name="message" label={i18n.message} 
+              placeholder={i18n.write_your_message_here} multiline rows={8} variant="filled" fullWidth
+              error={errors.message !== undefined}
+              helperText={errors.message?.message && i18n[errors.message.message]}
+            />
 
-          <TextField
-            {...register("email")} id="email" name="email" label={i18n.email} variant="filled" fullWidth
-            error={errors.email !== undefined}
-            helperText={errors.email?.message && i18n[errors.email.message]}       
-          />
-  
-
-          <TextField
-            {...register("phone")} id="phone" name="phone" label={i18n.phone} variant="filled" fullWidth
-            error={errors.phone !== undefined}
-            helperText={errors.phone?.message && i18n[errors.phone.message]}
-          />
-       
-          <TextField
-            {...register("message")} id="message" name="message" label={i18n.message}
-            placeholder={i18n.write_your_message_here} multiline rows={8} variant="filled" fullWidth
-            error={errors.message !== undefined}
-            helperText={errors.message?.message && i18n[errors.message.message]}
-          />
-          <Stack sx={{ marginLeft: 'auto' }}>
-            <Button 
-              type="submit"
-              sx={{ paddingX:"35px", 
-                background:"var(--primary)", 
-                color:"white", 
-                "&:hover": {
-                  background: "transparent",
-                  color: "var(--primary)",
-                },}}
-            >
-              {i18n.send}   
-            </Button>
-          </Stack>
-
-        </form>
+            <Stack className={style.hello} justifyContent={'space-between'} direction={mobile?"column":"row"}>
+              <Box width={"304px"} style={mobile?{marginLeft:"auto"}:{}}>
+                <ReCaptchaProvider
+                  siteKeyV2="6Lcprc0nAAAAAPs9QBtfOBvX_oD1-nqGShDiMI2q"
+                  langCode="de"
+                  hideV3Badge={true}
+                >
+                  <ReCaptchaV2
+                    callback={captchaCallback}
+                    theme={EReCaptchaV2Theme.Light}
+                    size={EReCaptchaV2Size.Normal}
+                    tabindex={0}
+                  />
+                </ReCaptchaProvider>
+                {captchaError&&<FormHelperText sx={{color:"#d32f2f"}}>Lösen Sie das Captcha, um zu bestätigen, dass Sie kein Roboter sind</FormHelperText>}
+              </Box>
+              <Button 
+                type="submit"    
+                sx={mobile?{
+                  width: "100px", height:"40px", ml:"auto", mt:"25px", background:"var(--primary)", color:"white", 
+                  "&:hover": {
+                    background: "transparent", color: "var(--primary)", },}:
+                    { width: "100px", height:"40px", background:"var(--primary)", color:"white", "&:hover": {
+                    background: "transparent", color: "var(--primary)", },
+                  }}
+              >
+                {i18n.send}   
+              </Button>
+            </Stack>
+          </form>
         </Stack>
 
       <Stack className={style.imprint}>
