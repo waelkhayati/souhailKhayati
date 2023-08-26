@@ -6,9 +6,6 @@ import { useForm } from 'react-hook-form';
 import { z, ZodError } from 'zod';
 import emailjs from '@emailjs/browser';
 import Snackbar from '@mui/material/Snackbar';
-import ReCAPTCHA from 'react-google-recaptcha';
-import ReactDOM from 'react-dom';
-
 import {
   EReCaptchaV2Size,
   EReCaptchaV2Theme,
