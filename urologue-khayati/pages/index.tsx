@@ -60,7 +60,7 @@ export default function Home() {
         <title>Urologe Khayati</title>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Herzlich willkommen in der Wahlarztordination Dr. Souhail Khayati. Kontaktieren Sie uns noch heute, um einen Termin zu vereinbaren." />
+        <meta name="description" content="Herzlich willkommen in der Wahlarztordination Urologe Khayati, die zentral gelegen am Marktplatz von Hausmannstätten in der Nähe von Graz, Kalsdorf und Fernitz ist, haben Sie die Möglichkeit in einer gemütlichen und persönlichen Atmosphäre, diagnostische und therapeutische Maßnahmen im Bereich der Urologie, Andrologie sowie Radioonkologie durchführen zu lassen." />
         <meta name="keywords" content="Khayati, Urologe Khayati, Urologie, Radiooncologie, Urooncologie, Urologie Hausmannstätten, Urologe Hausmannstätten, Andrologie, Souhail Khayati, Souhail Khayati, Graz, Urologe Graz, Urologe Graz-Umgebung, Hausmannstätten, Österreichische Gesellschaft für Urologie und Andrologie, Eruopean Assosication of Urology, Arbeitskreis für Andrologie und sexuelle Funktionsstörungen, Österreichische Gesellschaft für Radioonkologie, Urologie Praxis Graz, Facharzt für Urologie, Urologische Untersuchungen, Prostatakrebs Behandlung, Männergesundheit, Harnwegsinfektionen, Urologische Chirurgie, Blasenprobleme, Hodenerkrankungen, Nierensteinentfernung, Urologische Diagnostik, Andrologische Beratung, Prostatauntersuchung, Urologische Vorsorge, Urologische Rehabilitation, Urologische Therapieoptionen, Inkontinenzbehandlung, Urologische Praxis Hausmannstätten, Dr. Souhail Khayati, Urologe Graz-Umgebung, Urologische Gesundheitsberatung, Urologische Untersuchungsmethoden, Urologische Krankheiten, Urologische Operationen, Universitätsklinikum Graz, Med-Uni Graz, Medizinische Universität Graz, Abteilung für Urologie Med-Uni. Graz, Radioonkologie und Strahlentherapie medizinische, Universität Graz, LKH GRAZ, KAGES UROLOGIE, Urologe Graz, Graz-Umgebung, Rezüm Khayati,"
                                       />
 
@@ -71,24 +71,24 @@ export default function Home() {
         <link rel="icon" href="assets/favicon.ico"  type="image/x-icon"/>
 
         <meta property="og:title" content="Urologe-Khayati"/>
-        <meta property="og:description" content="Herzlich willkommen in der Wahlarztordination Dr. Souhail Khayati. Kontaktieren Sie uns noch heute, um einen Termin zu vereinbaren."/>
+        <meta property="og:description" content="Herzlich willkommen in der Wahlarztordination Urologe Khayati, die zentral gelegen am Marktplatz von Hausmannstätten in der Nähe von Graz, Kalsdorf und Fernitz ist, haben Sie die Möglichkeit in einer gemütlichen und persönlichen Atmosphäre, diagnostische und therapeutische Maßnahmen im Bereich der Urologie, Andrologie sowie Radioonkologie durchführen zu lassen." />
         <meta property="og:image" content="assets/hero.jpg"/>
         <meta property="og:url" content="https://www.urologe-khayati.at"/>
 
         <meta property="twitter:title" content="Urologe-Khayati"/>
-        <meta property="twitter:description" content="Herzlich willkommen in der Wahlarztordination Dr. Souhail Khayati. Kontaktieren Sie uns noch heute, um einen Termin zu vereinbaren."/>
+        <meta property="twitter:description" content="Herzlich willkommen in der Wahlarztordination Urologe Khayati, die zentral gelegen am Marktplatz von Hausmannstätten in der Nähe von Graz, Kalsdorf und Fernitz ist, haben Sie die Möglichkeit in einer gemütlichen und persönlichen Atmosphäre, diagnostische und therapeutische Maßnahmen im Bereich der Urologie, Andrologie sowie Radioonkologie durchführen zu lassen." />
         <meta property="twitter:image" content="assets/hero.jpg"/>
         <meta property="twitter:url" content="https://www.urologe-khayati.at"/>
 
-        <link rel="canonical" href="https://www.urologe-khayati.at"/>
+        <link rel="canonical" href="https://urologe-khayati.at"/>
         <script src='https://www.google.com/recaptcha/api.js?onload=getcaptcharesponse&render=explicit' async defer></script>
         <script type="application/ld+json">
           {JSON.stringify({
               "@context": "http://schema.org",
               "@type": "LocalBusiness",
               "name": "Urologe Khayati",
-              "description": "Herzlich willkommen in der Wahlarztordination Dr. Souhail Khayati. Kontaktieren Sie uns noch heute, um einen Termin zu vereinbaren.",
-              "url": "https://www.urologe-khayati.at",
+              "description": "Herzlich willkommen in der Wahlarztordination Urologe Khayati, die zentral gelegen am Marktplatz von Hausmannstätten in der Nähe von Graz, Kalsdorf und Fernitz ist, haben Sie die Möglichkeit in einer gemütlichen und persönlichen Atmosphäre, diagnostische und therapeutische Maßnahmen im Bereich der Urologie, Andrologie sowie Radioonkologie durchführen zu lassen.",
+              "url": "https://urologe-khayati.at",
               "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "Marktpl. 4/1",
