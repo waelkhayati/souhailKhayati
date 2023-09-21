@@ -11,6 +11,8 @@
 }
 
 .section1 h1{
+    content: "Dr.";
+    text-wrap: balance;
     font-size: 38px;
     color: var(--primary);
     font-weight: 600;
@@ -24,6 +26,7 @@
     font-size: 100%;
     margin: 10px 0;
 }
+
 
 .section1 span{
     font-weight: 400;
