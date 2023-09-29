@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+hiimport React, { useEffect } from 'react'
 import style from './homepage.module.css'
 import { Stack, Box } from '@mui/material'
 import Card from './Card/Card'
@@ -54,7 +54,7 @@ export default function Homepage(props: HomepageProps) {
       <Stack className={style.container}>
         <Image loading='lazy' height={350} width={2000} src="/assets/hero.jpg" alt="man_and_woman_lying_on_pillows_while_looking_at_each_other"/>
         <Stack className={style.section1}>
-          <h1>{i18n.welcome_to_my_private_ordination_intro}</h1>
+          <h1>{i18n.welcome_to_my_private_ordination_intro}<br/> Dr. Souhail Khayati</h1>
           <p>{i18n.in_my_ordination}</p>
           <p>Ich bin Vertragsarzt für KFA-Graz, Wien. Sowie Wahlarzt für die ÖGK!</p>
           <p>{i18n.i_inform_and_advise}</p>
