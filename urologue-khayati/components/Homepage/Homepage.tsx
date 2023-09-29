@@ -1,4 +1,4 @@
-hiimport React, { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import style from './homepage.module.css'
 import { Stack, Box } from '@mui/material'
 import Card from './Card/Card'
