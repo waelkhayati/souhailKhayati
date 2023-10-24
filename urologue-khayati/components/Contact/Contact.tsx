@@ -145,6 +145,8 @@ export default function Contact() {
            <p>Marktplatz 4, 1. Stock, 8071 Hausmannstätten</p>
            <h1>{i18n.phone}</h1>
            <p>+43 664 1441636 </p>
+           <h1>Fax</h1>
+           <p>+43 (0) 3135 499 29-4</p>
            <h1>{i18n.our_work_hours}</h1>
            <p >{i18n.our_work_hours_2}</p> 
         </Stack>
