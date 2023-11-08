@@ -3,9 +3,12 @@ import { useRouter } from "next/router";
 import { createContext, useEffect, useState } from "react";
 import "../styles/globals.css";
 import CookieConsent from "react-cookie-consent";
+import Script from "next/script";
 
 export const I18nContext = createContext({} as any);
 export default function MyApp({ Component, pageProps }: AppProps) {
+  
+  require('dotenv').config()
   const [showChild, setShowChild] = useState(false);
 
   const router = useRouter();
@@ -24,6 +27,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     setShowChild(true);
   }, []);
 
+
   if (!showChild) {
     return null;
   }
@@ -34,6 +38,30 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     return (
       <I18nContext.Provider value={i18n}>
 
+
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-15HZMM1001`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-15HZMM1001', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-15HZMM1001"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-15HZMM1001');
+        </script> */}
         <CookieConsent
           location="bottom"
           buttonText="Akzeptieren"
@@ -62,6 +90,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           Informationen finden Sie in unserer Datenschutzrichtlinie.
         </CookieConsent>
         <Component {...pageProps} />
+        
       </I18nContext.Provider>
     );
   }
